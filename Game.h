@@ -13,6 +13,7 @@
 #include "Menu.h"
 #include "Hero.h"
 #include "Enemy.h"
+#include "Ping.h"
     struct GameData {
         StateMachine machine;
         sf::RenderWindow window;
@@ -23,6 +24,9 @@
         Hero* heroptr;
         Enemy* enemyptr;
         int level;
+        std::vector<Ping*> V;
+        int bye;
+        int PingHit;
     };
 
     typedef std::shared_ptr<GameData> GameDataRef;

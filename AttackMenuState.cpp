@@ -40,7 +40,41 @@ void AttackMenuState::HandleInput() {
     while (this->data->window.pollEvent(event))
         if (sf::Event::Closed == event.type) {
             this->data->window.close();
+        }
+    if (event.type == sf::Event::MouseButtonPressed) {
+        if (event.mouseButton.button == sf::Mouse::Left) {
+            if (data->input.response((1000 * data->lenght) / 1920, (400 * data->width) / 1080,
+                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                //regen
 
+            }
+            if(data->heroptr->canAttack()) {
+                if (data->input.response((800 * data->lenght) / 1920, (200 * data->width) / 1080,
+                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                    //normal
+
+                    data->heroptr->setAttack(0);
+                    this->data->machine.setNewState(StateRef(new PingState(data)));
+                    this->data->machine.setReplace(true);
+                }
+                if (data->input.response((800 * data->lenght) / 1920, (400 * data->width) / 1080,
+                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                    if(data->heroptr->isHasLight()==false) {
+                        //light
+                        data->heroptr->setAttack(1);
+                        this->data->machine.setNewState(StateRef(new PingState(data)));
+                        this->data->machine.setReplace(true);
+                    }
+                }
+                if (data->input.response((1000 * data->lenght) / 1920, (200 * data->width) / 1080,
+                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                    //strong
+                    data->heroptr->setAttack(2);
+                    this->data->machine.setNewState(StateRef(new PingState(data)));
+                    this->data->machine.setReplace(true);
+                }
+                }
+            }
         }
 }
 

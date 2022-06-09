@@ -10,6 +10,7 @@
 #include "Goblin.h"
 #include "Dragon.h"
 #include "Rat.h"
+#include "PingState.h"
 class AttackMenuState:public State {
 public:
     AttackMenuState(GameDataRef data);
