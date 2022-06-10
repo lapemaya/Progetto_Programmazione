@@ -8,7 +8,7 @@ Ping::Ping(int posx,int posy){
     auto texture=new sf::Texture;
     texture->loadFromFile("./sprite/Varie/ping.png");
     this->setTexture(*texture);
-    this->setScale(100/32,100/32);
+
 }
 
 Ping::Ping(){
@@ -17,7 +17,7 @@ Ping::Ping(){
     auto texture=new sf::Texture;
     texture->loadFromFile("./sprite/Varie/ping.png");
     this->setTexture(*texture);
-    this->setScale(100/32,100/32);
+
 }
 
 

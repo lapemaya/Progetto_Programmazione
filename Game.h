@@ -23,10 +23,13 @@
         InputManager input;
         Hero* heroptr;
         Enemy* enemyptr;
-        int level;
+        int level=1;
         std::vector<Ping*> V;
+        std::vector<Tool*> Vtool;
         int bye;
         int PingHit;
+        bool again=false;
+        bool first=true;
     };
 
     typedef std::shared_ptr<GameData> GameDataRef;

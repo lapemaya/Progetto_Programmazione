@@ -7,10 +7,15 @@
 #include"iostream"
     Game::Game() {
 
-        data->window.create(sf::VideoMode::getDesktopMode(), "da Game");
+        data->window.create(sf::VideoMode::getDesktopMode(), "da Game"//,sf::Style::Fullscreen
+        );
+
         data->lenght=data->window.getSize().x;
         data->width=data->window.getSize().y;
-        data->window.setSize(data->window.getSize());
+
+        sf::Vector2<unsigned int>ciao{unsigned(int(data->lenght)),unsigned(int(data->width))};
+        //sf::Vector2<unsigned int>ciao{700,700};
+        data->window.setSize(ciao);
         data->machine.AddState(StateRef(new MainMenuState(this->data)));
 
         this->Run();

@@ -7,7 +7,7 @@
 #include "State.h"
 #include "Game.h"
 #include "NullMenu.h"
-#include "ArrayPing.h"
+#include "HeroAttackState.h"
 
 class PingState:public State {
 public:
@@ -28,6 +28,9 @@ public:
     void clickPing(std::vector<Ping*> &V);
 private:
     GameDataRef data;
+    sf::Time time1;
+    sf::Clock clock1;
+
 };
 
 

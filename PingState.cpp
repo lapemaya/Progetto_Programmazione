@@ -13,7 +13,10 @@ PingState::~PingState() {
 }
 
 void PingState::Update() {
-
+    if(clock1.getElapsedTime()>time1){
+        this->data->machine.setNewState(StateRef(new HeroAttackState(data)));
+        this->data->machine.setReplace(true);
+    }
 }
 
 void PingState::Init() {
@@ -21,7 +24,8 @@ void PingState::Init() {
     data->menu=new NullMenu();
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
     this->creationPing(data->heroptr->getNping(),data->V);
-
+    time1=sf::seconds(3+(data->heroptr->getNping()/7));
+    clock1.restart();
 
 
 
@@ -132,7 +136,7 @@ void PingState::clickPing(std::vector<Ping *> &V) {
         controllo = *V.at(i);
 
         if (globalPosition.x > controllo.getPosx() && globalPosition.x < controllo.getPosx() + dimx
-            && globalPosition.y >controllo.getPosy() && globalPosition.y < controllo.getPosy() +dimy ) {
+            && globalPosition.y >controllo.getPosy() && globalPosition.y < controllo.getPosy() +dimy) {
             delete V.at(i);
             V.erase(V.begin()+i);
             data->bye++;

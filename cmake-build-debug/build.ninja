@@ -217,8 +217,38 @@ build CMakeFiles/gioco2.dir/Ping.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CL
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
 
-build CMakeFiles/gioco2.dir/ArrayPing.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/ArrayPing.cpp || cmake_object_order_depends_target_gioco2
-  DEP_FILE = CMakeFiles/gioco2.dir/ArrayPing.cpp.o.d
+build CMakeFiles/gioco2.dir/HeroAttackState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/HeroAttackState.cpp || cmake_object_order_depends_target_gioco2
+  DEP_FILE = CMakeFiles/gioco2.dir/HeroAttackState.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/gioco2.dir
+  OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+
+build CMakeFiles/gioco2.dir/EnemyAttackState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/EnemyAttackState.cpp || cmake_object_order_depends_target_gioco2
+  DEP_FILE = CMakeFiles/gioco2.dir/EnemyAttackState.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/gioco2.dir
+  OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+
+build CMakeFiles/gioco2.dir/DedState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/DedState.cpp || cmake_object_order_depends_target_gioco2
+  DEP_FILE = CMakeFiles/gioco2.dir/DedState.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/gioco2.dir
+  OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+
+build CMakeFiles/gioco2.dir/DedMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/DedMenu.cpp || cmake_object_order_depends_target_gioco2
+  DEP_FILE = CMakeFiles/gioco2.dir/DedMenu.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/gioco2.dir
+  OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+
+build CMakeFiles/gioco2.dir/LootMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/LootMenu.cpp || cmake_object_order_depends_target_gioco2
+  DEP_FILE = CMakeFiles/gioco2.dir/LootMenu.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/gioco2.dir
+  OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+
+build CMakeFiles/gioco2.dir/LootState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/LootState.cpp || cmake_object_order_depends_target_gioco2
+  DEP_FILE = CMakeFiles/gioco2.dir/LootState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
@@ -231,7 +261,7 @@ build CMakeFiles/gioco2.dir/ArrayPing.cpp.o: CXX_COMPILER__gioco2_Debug /home/la
 #############################################
 # Link the executable gioco2
 
-build gioco2: CXX_EXECUTABLE_LINKER__gioco2_Debug CMakeFiles/gioco2.dir/main.cpp.o CMakeFiles/gioco2.dir/StateMachine.cpp.o CMakeFiles/gioco2.dir/Game.cpp.o CMakeFiles/gioco2.dir/MainMenuState.cpp.o CMakeFiles/gioco2.dir/MainMenu.cpp.o CMakeFiles/gioco2.dir/InputManager.cpp.o CMakeFiles/gioco2.dir/ClassMenuState.cpp.o CMakeFiles/gioco2.dir/ClassMenu.cpp.o CMakeFiles/gioco2.dir/Knight.cpp.o CMakeFiles/gioco2.dir/Hero.cpp.o CMakeFiles/gioco2.dir/Tool.cpp.o CMakeFiles/gioco2.dir/Torso.cpp.o CMakeFiles/gioco2.dir/Anello.cpp.o CMakeFiles/gioco2.dir/Shoes.cpp.o CMakeFiles/gioco2.dir/SpecialTool.cpp.o CMakeFiles/gioco2.dir/Sword.cpp.o CMakeFiles/gioco2.dir/Wand.cpp.o CMakeFiles/gioco2.dir/Nature.cpp.o CMakeFiles/gioco2.dir/AttackMenuState.cpp.o CMakeFiles/gioco2.dir/AttackMenu.cpp.o CMakeFiles/gioco2.dir/Enemy.cpp.o CMakeFiles/gioco2.dir/Goblin.cpp.o CMakeFiles/gioco2.dir/Dragon.cpp.o CMakeFiles/gioco2.dir/Fireball.cpp.o CMakeFiles/gioco2.dir/Rat.cpp.o CMakeFiles/gioco2.dir/PingState.cpp.o CMakeFiles/gioco2.dir/NullMenu.cpp.o CMakeFiles/gioco2.dir/Ping.cpp.o CMakeFiles/gioco2.dir/ArrayPing.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+build gioco2: CXX_EXECUTABLE_LINKER__gioco2_Debug CMakeFiles/gioco2.dir/main.cpp.o CMakeFiles/gioco2.dir/StateMachine.cpp.o CMakeFiles/gioco2.dir/Game.cpp.o CMakeFiles/gioco2.dir/MainMenuState.cpp.o CMakeFiles/gioco2.dir/MainMenu.cpp.o CMakeFiles/gioco2.dir/InputManager.cpp.o CMakeFiles/gioco2.dir/ClassMenuState.cpp.o CMakeFiles/gioco2.dir/ClassMenu.cpp.o CMakeFiles/gioco2.dir/Knight.cpp.o CMakeFiles/gioco2.dir/Hero.cpp.o CMakeFiles/gioco2.dir/Tool.cpp.o CMakeFiles/gioco2.dir/Torso.cpp.o CMakeFiles/gioco2.dir/Anello.cpp.o CMakeFiles/gioco2.dir/Shoes.cpp.o CMakeFiles/gioco2.dir/SpecialTool.cpp.o CMakeFiles/gioco2.dir/Sword.cpp.o CMakeFiles/gioco2.dir/Wand.cpp.o CMakeFiles/gioco2.dir/Nature.cpp.o CMakeFiles/gioco2.dir/AttackMenuState.cpp.o CMakeFiles/gioco2.dir/AttackMenu.cpp.o CMakeFiles/gioco2.dir/Enemy.cpp.o CMakeFiles/gioco2.dir/Goblin.cpp.o CMakeFiles/gioco2.dir/Dragon.cpp.o CMakeFiles/gioco2.dir/Fireball.cpp.o CMakeFiles/gioco2.dir/Rat.cpp.o CMakeFiles/gioco2.dir/PingState.cpp.o CMakeFiles/gioco2.dir/NullMenu.cpp.o CMakeFiles/gioco2.dir/Ping.cpp.o CMakeFiles/gioco2.dir/HeroAttackState.cpp.o CMakeFiles/gioco2.dir/EnemyAttackState.cpp.o CMakeFiles/gioco2.dir/DedState.cpp.o CMakeFiles/gioco2.dir/DedMenu.cpp.o CMakeFiles/gioco2.dir/LootMenu.cpp.o CMakeFiles/gioco2.dir/LootState.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/gioco2.dir

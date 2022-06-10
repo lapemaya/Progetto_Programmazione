@@ -84,7 +84,12 @@
 				51,
 				53,
 				55,
-				57
+				57,
+				59,
+				61,
+				63,
+				65,
+				67
 			]
 		}
 	],
@@ -170,7 +175,12 @@
 				51,
 				53,
 				55,
-				57
+				57,
+				59,
+				61,
+				63,
+				65,
+				67
 			]
 		},
 		{
@@ -206,7 +216,12 @@
 				52,
 				54,
 				56,
-				58
+				58,
+				60,
+				62,
+				64,
+				66,
+				68
 			]
 		}
 	],
@@ -528,12 +543,67 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ArrayPing.cpp",
+			"path" : "HeroAttackState.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "ArrayPing.h",
+			"path" : "HeroAttackState.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "EnemyAttackState.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "EnemyAttackState.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DedState.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "DedState.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DedMenu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "DedMenu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "LootMenu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "LootMenu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "LootState.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "LootState.h",
 			"sourceGroupIndex" : 1
 		}
 	],
