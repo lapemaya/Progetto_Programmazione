@@ -61,12 +61,19 @@ void EnemyAttackState::Update() {
     }
 }
 void EnemyAttackState::Init() {
+    delete data->menu;
+    data->menu=new NullMenu;
     damage=data->enemyptr->attack();
-
+    data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
 }
 
 void EnemyAttackState::HandleInput() {
+    sf::Event event;
+    while (this->data->window.pollEvent(event))
+        if (sf::Event::Closed == event.type) {
+            this->data->window.close();
 
+        }
 }
 
 void EnemyAttackState::Draw() {

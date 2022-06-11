@@ -39,6 +39,8 @@ void DedState::HandleInput() {
                 data->level = 1;
                 this->data->machine.setNewState(StateRef(new ClassMenuState(data)));
                 this->data->machine.setReplace(true);
+                data->first=true;
+
             }
             if (data->input.response((1200 * data->lenght) / 1920, (600 * data->width) / 1080,
                                      (500 * data->lenght) / 1920, (300 * data->width) / 1080, globalPosition)) {

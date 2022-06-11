@@ -3,6 +3,7 @@
 //
 #include "iostream"
 #include "MainMenuState.h"
+#include "HowState.h"
 
 
 void MainMenuState::Init() {
@@ -43,9 +44,10 @@ void MainMenuState::HandleInput() {
                                          (500 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
                     this->data->window.close();
                 }
-                if (data->input.response((1400 * data->lenght) / 1920, (700 * data->width) / 1080,
+                if (data->input.response((1400 * data->lenght) / 1920, (500 * data->width) / 1080,
                                          (500 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
-                    //TODO howmenu
+                    this->data->machine.setNewState(StateRef(new HowState(data)));
+                    this->data->machine.setReplace(true);
                 }
                 }
             }

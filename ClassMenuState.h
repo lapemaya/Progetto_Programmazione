@@ -22,7 +22,7 @@ public:
     void HandleInput()override;
 
     void Draw() override;
-    void creationEnemy();
+
 private:
     GameDataRef data;
 };

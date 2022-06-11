@@ -47,7 +47,7 @@ void ClassMenuState::HandleInput() {
                data-> heroptr=new Knight;
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
                 this->data->machine.setReplace(true);
-                creationEnemy();
+
 
             }
             if (data->input.response((1350 * data->lenght) / 1920, (300 * data->width) / 1080,
@@ -66,13 +66,3 @@ void ClassMenuState::Draw() {
     this->data->window.draw(*data->menu);
 }
 
-void ClassMenuState::creationEnemy() {
-    int random=rand()%3;
-
-    if(random==0){
-        data->enemyptr=new Goblin(data->level);}
-    if(random==1){
-        data->enemyptr=new Rat(data->level);}
-    if(random==2){
-        data->enemyptr=new Dragon(data->level);}
-}

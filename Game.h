@@ -26,10 +26,11 @@
         int level=1;
         std::vector<Ping*> V;
         std::vector<Tool*> Vtool;
-        int bye;
+        int bye=0;
         int PingHit;
         bool again=false;
         bool first=true;
+        bool prima=true;
     };
 
     typedef std::shared_ptr<GameData> GameDataRef;

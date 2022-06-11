@@ -105,7 +105,7 @@ int Knight::Attack() {
         damage = damage * 5;
         crit=false;
     }
-
+    staminaLeft-=2;
     return damage;
 }
 

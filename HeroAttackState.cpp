@@ -89,7 +89,8 @@ void HeroAttackState::Update() {
 
         this->data->machine.setNewState(StateRef(new LootState(data)));
         this->data->machine.setReplace(true);
-        //TODO loot
+        data->first=true;
+
 
 
     }
@@ -103,7 +104,12 @@ void HeroAttackState::Init() {
 }
 
 void HeroAttackState::HandleInput() {
+    sf::Event event;
+    while (this->data->window.pollEvent(event))
+        if (sf::Event::Closed == event.type) {
+            this->data->window.close();
 
+        }
 }
 
 void HeroAttackState::Draw() {

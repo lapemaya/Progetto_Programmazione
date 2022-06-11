@@ -2,20 +2,20 @@
 // Created by lapo on 10/06/22.
 //
 
-#ifndef GIOCO2_LOOTSTATE_H
-#define GIOCO2_LOOTSTATE_H
+#ifndef GIOCO2_SHOPSTATE_H
+#define GIOCO2_SHOPSTATE_H
 #include "State.h"
 #include "Game.h"
-#include "LootMenu.h"
-#include "ShopState.h"
-#include "HeroCheckState.h"
-class LootState:public State {
+#include "ShopMenu.h"
+#include "StatState.h"
+
+class ShopState:public State {
 
 public:
-    LootState(GameDataRef data);
+    ShopState(GameDataRef data);
 
 
-    virtual ~LootState();
+    virtual ~ShopState();
 
     void Update() override;
     void Init() override;
@@ -23,11 +23,13 @@ public:
     void HandleInput()override;
 
     void Draw() override;
+
     void creationToolGeneral();
     Tool* creationTool();
+    bool canPay(int N);
 private:
     GameDataRef data;
 };
 
 
-#endif //GIOCO2_LOOTSTATE_H
+#endif //GIOCO2_SHOPSTATE_H

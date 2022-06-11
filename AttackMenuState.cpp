@@ -12,7 +12,9 @@ void AttackMenuState::Init() {
     delete data->menu;
     data->menu=new AttackMenu();
     data->menu->setScale(((1 * data->lenght) / 1920), ((1 * data->width) / 1080));
+
     if(data->first){
+        creationEnemy();
         data->first=false;
         data->heroptr->setPosx((data->heroptr->getPosx() * data->lenght) / 1920);
         data->heroptr->setPosx((data->heroptr->getPosx() * data->width) / 1080);
@@ -62,6 +64,7 @@ void AttackMenuState::HandleInput() {
                     //normal
 
                     data->heroptr->setAttack(0);
+                    data->heroptr->setHasLight(false);
                     this->data->machine.setNewState(StateRef(new PingState(data)));
                     this->data->machine.setReplace(true);
                 }
@@ -70,6 +73,7 @@ void AttackMenuState::HandleInput() {
                     if(data->heroptr->isHasLight()==false) {
                         //light
                         data->heroptr->setAttack(1);
+                        data->heroptr->setHasLight(true);
                         this->data->machine.setNewState(StateRef(new PingState(data)));
                         this->data->machine.setReplace(true);
                     }
@@ -78,6 +82,7 @@ void AttackMenuState::HandleInput() {
                                          (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
                     //strong
                     data->heroptr->setAttack(2);
+                    data->heroptr->setHasLight(false);
                     this->data->machine.setNewState(StateRef(new PingState(data)));
                     this->data->machine.setReplace(true);
                 }
@@ -92,6 +97,17 @@ void AttackMenuState::Draw() {
     data->window.draw(*data->enemyptr);
 
 
+}
+
+void AttackMenuState::creationEnemy() {
+    int random=rand()%3;
+
+    if(random==0){
+        data->enemyptr=new Goblin(data->level);}
+    if(random==1){
+        data->enemyptr=new Rat(data->level);}
+    if(random==2){
+        data->enemyptr=new Dragon(data->level);}
 }
 
 
