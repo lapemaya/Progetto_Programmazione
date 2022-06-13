@@ -9,7 +9,6 @@
 
         data->window.create(sf::VideoMode::getDesktopMode(), "da Game",sf::Style::Fullscreen
         );
-
         data->lenght=data->window.getSize().x;
         data->width=data->window.getSize().y;
 
@@ -17,6 +16,7 @@
         //sf::Vector2<unsigned int>ciao{700,700};
         data->window.setSize(ciao);
         data->machine.AddState(StateRef(new MainMenuState(this->data)));
+        data->font.loadFromFile("font.ttf");
 
         this->Run();
     }

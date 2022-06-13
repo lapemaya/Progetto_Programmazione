@@ -4,7 +4,7 @@
 
 #ifndef GIOCO2_STATE_H
 #define GIOCO2_STATE_H
-
+#include "sstream"
 
 class State {
 public:

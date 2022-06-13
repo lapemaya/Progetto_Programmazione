@@ -30,6 +30,8 @@ private:
     int countExplosion=0;
     sf::Time time1;
     sf::Clock clock1;
+    sf::Text* text1;
+
 };
 
 

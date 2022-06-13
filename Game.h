@@ -14,6 +14,7 @@
 #include "Hero.h"
 #include "Enemy.h"
 #include "Ping.h"
+#include "ToolInterface.h"
     struct GameData {
         StateMachine machine;
         sf::RenderWindow window;
@@ -26,11 +27,16 @@
         int level=1;
         std::vector<Ping*> V;
         std::vector<Tool*> Vtool;
+        ToolInterface toolInterface;
+
+
         int bye=0;
         int PingHit;
         bool again=false;
         bool first=true;
         bool prima=true;
+        sf::Font font;
+
     };
 
     typedef std::shared_ptr<GameData> GameDataRef;

@@ -14,10 +14,27 @@ HeroAttackState::HeroAttackState(GameDataRef data) {
     explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
     explosion->setScale((12.5*data->lenght)/1920,(12.5*data->width)/1080);
 
+
+
+    auto texti=new sf::Text;
+    text1=texti;
+
+    text1->setFont(data->font);
+
+
+    text1->setCharacterSize(100);
+    text1->setScale(data->lenght/1920,data->width/1080);
+    text1->setPosition((1500*data->lenght)/1920,(700*data->width)/1080);
+
+    text1->setFillColor(sf::Color::Black);
+    text1->setOutlineThickness(5);
+    text1->setOutlineColor(sf::Color::Red);
+
 }
 
 HeroAttackState::~HeroAttackState() {
 delete explosion;
+delete text1;
 }
 
 void HeroAttackState::Update() {
@@ -25,15 +42,15 @@ void HeroAttackState::Update() {
     if(data->heroptr->isAttackEnded()==false&&isExplosion==false){
         data->heroptr->attackAnimation();
     }
-    if(data->heroptr->isAttackEnded()) {
+    if(data->heroptr->isAttackEnded()&&isExplosion==false) {
 
         data->heroptr->setFaseAttack(0);
         data->heroptr->setCountAttack(0);
 
         //  RESET VETTORE PING(DESTROY)
-        data->heroptr->setPingHit(data->PingHit);
 
-        if(data->heroptr->getPingHit()==data->V.size()+data->bye&&data->heroptr->isHasLight()==true){
+
+        if(data->heroptr->getPingHit()==data->V.size()+data->bye&&data->heroptr->isHasLight()){
             data->again=true;
         }
 
@@ -56,6 +73,10 @@ void HeroAttackState::Update() {
         explosion->setTextureRect(sf::IntRect(32 * countExplosion, 0, 32, 32));
         countExplosion++;
         clock1.restart();
+        std::stringstream ciao1;
+        ciao1<<"-"<<damage;
+        text1->setString(ciao1.str());
+
         while (clock1.getElapsedTime() < time1) {}
 
         if (countExplosion == 16) {
@@ -89,6 +110,7 @@ void HeroAttackState::Update() {
 
         this->data->machine.setNewState(StateRef(new LootState(data)));
         this->data->machine.setReplace(true);
+        data->heroptr->setMoney(data->heroptr->getMoney() + data->level * 5 + rand() % 6);
         data->first=true;
 
 
@@ -118,5 +140,6 @@ void HeroAttackState::Draw() {
     data->enemyptr->drawMe(data->window);
     if(isExplosion){
         data->window.draw(*this->explosion);
+        data->window.draw(*text1);
     }
 }

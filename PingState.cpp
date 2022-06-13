@@ -6,10 +6,47 @@
 
 PingState::PingState(GameDataRef data) {
     this->data=data;
+    ////////////////////////////////////////////////////////////
+    std::stringstream ciao1;
+
+    ciao1<<"Hp= "<<data->heroptr->getHp()<<"\nStamina= "<<data->heroptr->getStaminaLeft()<<"\nMoney= "<<data->heroptr->getMoney();
+
+    auto texti1=new sf::Text;
+    text1=texti1;
+
+    text1->setFont(data->font);
+    text1->setString(ciao1.str());
+
+    text1->setCharacterSize(50);
+    text1->setScale(data->lenght/1920,data->width/1080);
+    text1->setPosition((50*data->lenght)/1920,(100*data->width)/1080);
+
+    text1->setFillColor(sf::Color::Black);
+    text1->setOutlineThickness(5);
+    text1->setOutlineColor(sf::Color::Red);
+/////////////////////////////////////////////////
+    std::stringstream ciao2;
+
+    ciao2<<"Hp= "<<data->enemyptr->getHp()<<"\nStamina= "<<data->enemyptr->getStaminaLeft();
+
+    auto texti2=new sf::Text;
+    text2=texti2;
+
+    text2->setFont(data->font);
+    text2->setString(ciao2.str());
+
+    text2->setCharacterSize(50);
+    text2->setScale(data->lenght/1920,data->width/1080);
+    text2->setPosition((1550*data->lenght)/1920,(100*data->width)/1080);
+
+    text2->setFillColor(sf::Color::Black);
+    text2->setOutlineThickness(5);
+    text2->setOutlineColor(sf::Color::Red);
 }
 
 PingState::~PingState() {
-
+delete text1;
+delete text2;
 }
 
 void PingState::Update() {
@@ -51,6 +88,8 @@ void PingState::Draw() {
     this->drawPings(data->V);
     data->heroptr->drawHero(data->window);
     data->enemyptr->drawMe(data->window);
+    data->window.draw(*text1);
+    data->window.draw(*text2);
 
 }
 

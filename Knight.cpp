@@ -54,9 +54,8 @@ void Knight::attackAnimation() {
         if (countAttack == 9) {
             this->faseAttack = 1;
             this->countAttack=0;
-            int random=rand()%100;
-            if(random<=3*nping)
-                crit=true;
+
+
         }
     }
     if(this->faseAttack==1){
@@ -71,6 +70,7 @@ void Knight::attackAnimation() {
         if(this->countAttack==6){
             this->faseAttack = 2;
             this->countAttack=0;
+            crit=false;
         }
 
     }
@@ -94,6 +94,9 @@ void Knight::attackAnimation() {
 
 int Knight::Attack() {
     int damage;
+    int random=rand()%100;
+    if(random<=3*nping)
+        crit=true;
 
     if(this->attack==0)
         damage=attackNormal();
@@ -103,7 +106,7 @@ int Knight::Attack() {
         damage=attackStrong();
     if(crit==true) {
         damage = damage * 5;
-        crit=false;
+
     }
     staminaLeft-=2;
     return damage;
