@@ -22,6 +22,8 @@ public:
     void Draw() override;
 private:
     GameDataRef data;
+    sf::Text* text1;
+    sf::Text* text2;
 
 };
 

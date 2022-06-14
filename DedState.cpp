@@ -20,6 +20,42 @@ void DedState::Init() {
     delete data->menu;
     data->menu=new DedMenu();
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
+
+    std::stringstream ciao1;
+
+    ciao1<<"New Game";
+
+    auto texti=new sf::Text;
+    text1=texti;
+
+    text1->setFont(data->font);
+    text1->setString(ciao1.str());
+
+    text1->setCharacterSize(50);
+    text1->setScale(data->lenght/1920,data->width/1080);
+    text1->setPosition((320*data->lenght)/1920,(700*data->width)/1080);
+
+    text1->setFillColor(sf::Color::Black);
+    text1->setOutlineThickness(5);
+    text1->setOutlineColor(sf::Color::Red);
+/////////////////////////////////////////////////
+    std::stringstream ciao2;
+    ciao2<<"Exit to\ndesktop";
+
+    auto texti2=new sf::Text;
+    text2=texti2;
+
+    text2->setFont(data->font);
+    text2->setString(ciao2.str());
+
+    text2->setCharacterSize(50);
+    text2->setScale(data->lenght/1920,data->width/1080);
+    text2->setPosition((1360*data->lenght)/1920,(680*data->width)/1080);
+
+    text2->setFillColor(sf::Color::Black);
+    text2->setOutlineThickness(5);
+    text2->setOutlineColor(sf::Color::Red);
+    /////////////////////////////////////////////////
 }
 
 void DedState::HandleInput() {
@@ -52,4 +88,6 @@ void DedState::HandleInput() {
 }
 void DedState::Draw() {
 data->window.draw(*data->menu);
+    data->window.draw(*text1);
+    data->window.draw(*text2);
 }
