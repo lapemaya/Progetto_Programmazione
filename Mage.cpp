@@ -92,12 +92,21 @@ void Mage::attackAnimation() {
                 this->setAttackEnded(true);
 
                 fireptr->setPosition(fireptr->getPosx(),fireptr->getPosy());
+                countPing+=pingHit;
             }
         }
         delete time1;
         delete clock1;
     }
-
+    if(attackEnded&&aura==1){
+        countPing=0;
+        fireptr->setScale(6.25,6.25);
+        aura=0;
+        this->setTextureRect(sf::IntRect(0,aura*32,32,32));
+    }
+    if(countPing>=8&&attackEnded){
+        aura=1;
+        this->setTextureRect(sf::IntRect(0,32*aura,32,32));}
 
 }
 
@@ -121,15 +130,9 @@ int Mage::Attack() {
         damage=attackStrong();
     if(aura==1){
         damage=damage*1.5;
-        countPing=0;
-        fireptr->setScale(6.25,6.25);
-        aura=0;
-        this->setTextureRect(sf::IntRect(0,aura*32,32,32));
+
     }
-    countPing+=pingHit;
-    if(countPing>=8){
-        aura=1;
-        this->setTextureRect(sf::IntRect(0,32*aura,32,32));}
+
     return damage;
 }
 

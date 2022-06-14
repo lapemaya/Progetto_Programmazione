@@ -42,6 +42,24 @@ PingState::PingState(GameDataRef data) {
     text2->setFillColor(sf::Color::Black);
     text2->setOutlineThickness(5);
     text2->setOutlineColor(sf::Color::Red);
+    /////////////////////////////////////////////////
+    std::stringstream ciao3;
+
+    ciao3<<(time1.asSeconds()-clock1.getElapsedTime().asSeconds());
+
+    auto texti3=new sf::Text;
+    text3=texti3;
+
+    text3->setFont(data->font);
+    text3->setString(ciao3.str());
+
+    text3->setCharacterSize(50);
+    text3->setScale(data->lenght/1920,data->width/1080);
+    text3->setPosition((900*data->lenght)/1920,(50*data->width)/1080);
+
+    text3->setFillColor(sf::Color::Black);
+    text3->setOutlineThickness(5);
+    text3->setOutlineColor(sf::Color::Red);
 }
 
 PingState::~PingState() {
@@ -50,7 +68,15 @@ delete text2;
 }
 
 void PingState::Update() {
+    std::stringstream ciao3;
+    float value = (int)((time1.asSeconds()-clock1.getElapsedTime().asSeconds()) * 10);
+    value=(float)value / 10;
+    ciao3<<(value);
+    text3->setString(ciao3.str());
+
     if(clock1.getElapsedTime()>time1){
+        end=true;}
+    if(end){
         this->data->machine.setNewState(StateRef(new HeroAttackState(data)));
         this->data->machine.setReplace(true);
     }
@@ -61,7 +87,7 @@ void PingState::Init() {
     data->menu=new NullMenu();
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
     this->creationPing(data->heroptr->getNping(),data->V);
-    time1=sf::seconds(3+(data->heroptr->getNping()/7));
+    time1=sf::seconds(3+(data->heroptr->getNping()/7)+0.5*data->heroptr->getShoes()->getRarity());
     clock1.restart();
 
 
@@ -90,6 +116,7 @@ void PingState::Draw() {
     data->enemyptr->drawMe(data->window);
     data->window.draw(*text1);
     data->window.draw(*text2);
+    data->window.draw(*text3);
 
 }
 
@@ -181,9 +208,13 @@ void PingState::clickPing(std::vector<Ping *> &V) {
             data->bye++;
             N=N-data->bye;
             data->PingHit++;
-
+            data->music4.stop();
+            data->music4.play();
 
         }
 
+    }
+    if(data->V.size()==0){
+        end=true;
     }
 }

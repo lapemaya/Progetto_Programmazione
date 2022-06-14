@@ -110,6 +110,8 @@ void ClassMenuState::HandleInput() {
                 data-> heroptr=new Mage;
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
 
             }
             if (data->input.response((730 * data->lenght) / 1920, (300 * data->width) / 1080,
@@ -118,6 +120,8 @@ void ClassMenuState::HandleInput() {
                data-> heroptr=new Knight;
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
 
 
             }
@@ -127,6 +131,8 @@ void ClassMenuState::HandleInput() {
                 data-> heroptr=new Druid;
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
 
             }
             }

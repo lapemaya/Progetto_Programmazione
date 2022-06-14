@@ -30,6 +30,9 @@ void AttackMenuState::Init() {
         data->enemyptr->setPosx((data->enemyptr->getPosx() * data->width) / 1080);
         data->enemyptr->setPosition(data->enemyptr->getPosx(), data->enemyptr->getPosy());
         data->enemyptr->setScale(((12.5 * data->lenght) / 1920), ((12.5 * data->width) / 1080));
+        data->music1.openFromFile("./music/hollow.wav");
+        data->music1.setPlayingOffset(sf::seconds(43));
+        data->music1.play();
     }
     if(data->again== true) {
         data->again=false;
@@ -169,6 +172,8 @@ void AttackMenuState::HandleInput() {
 
                 this->data->machine.setNewState(StateRef(new EnemyAttackState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
 
             }
             if(data->heroptr->canAttack()) {
@@ -180,6 +185,8 @@ void AttackMenuState::HandleInput() {
                     data->heroptr->setHasLight(false);
                     this->data->machine.setNewState(StateRef(new PingState(data)));
                     this->data->machine.setReplace(true);
+                    data->music3.stop();
+                    data->music3.play();
                 }
                 if (data->input.response((800 * data->lenght) / 1920, (400 * data->width) / 1080,
                                          (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
@@ -189,6 +196,8 @@ void AttackMenuState::HandleInput() {
                         data->heroptr->setHasLight(true);
                         this->data->machine.setNewState(StateRef(new PingState(data)));
                         this->data->machine.setReplace(true);
+                        data->music3.stop();
+                        data->music3.play();
                     }
                 }
                 if (data->input.response((1000 * data->lenght) / 1920, (200 * data->width) / 1080,
@@ -198,6 +207,8 @@ void AttackMenuState::HandleInput() {
                     data->heroptr->setHasLight(false);
                     this->data->machine.setNewState(StateRef(new PingState(data)));
                     this->data->machine.setReplace(true);
+                    data->music3.stop();
+                    data->music3.play();
                 }
                 }
             }

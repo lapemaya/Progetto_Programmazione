@@ -45,6 +45,8 @@ void EnemyAttackState::Update() {
             data->enemyptr->setAttackEnded(false);
             data->enemyptr->setStaminaLeft(data->enemyptr->getStaminaLeft() - 2);
             isExplosion = true;
+            data->music2.stop();
+            data->music2.play();
         }
         if (isExplosion) {
             explosion->setPosition((100 * data->lenght) / 1920, (500 * data->width) / 1080);
@@ -63,9 +65,13 @@ void EnemyAttackState::Update() {
                 countExplosion = 0;
                 explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
                 damage = 0;
+
                 if (data->heroptr->isDead()){
                     this->data->machine.setNewState(StateRef(new DedState(data)));
                     this->data->machine.setReplace(true);
+                    data->music1.stop();
+                    data->music1.openFromFile("./music/deadmario.wav");
+                    data->music1.play();
                 }
                 else{
                     this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
@@ -76,7 +82,7 @@ void EnemyAttackState::Update() {
 
     } else {
         data->enemyptr->setStaminaLeft(data->enemyptr->getStaminaLeft() + data->enemyptr->getStamina());
-        //TODO cambio fase
+
         this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
         this->data->machine.setReplace(true);
     }

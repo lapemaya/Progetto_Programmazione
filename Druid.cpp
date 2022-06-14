@@ -159,10 +159,13 @@ void Druid::drawHero(sf::RenderWindow &finestra) {
 }
 
 void Druid::resetBonus() {
-    transform=0;
-    this->setTextureRect(sf::IntRect(0,0,32,32));
+    if(transform==1) {
+        posy -= 100;
+        this->setPosition(posx, posy);
+        transform = 0;
+        this->setTextureRect(sf::IntRect(0, 0, 32, 32));
 
-
+    }
 }
 
 int Druid::Attack() {

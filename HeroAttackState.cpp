@@ -65,6 +65,8 @@ void HeroAttackState::Update() {
 
         data->heroptr->setPingHit(0);
         isExplosion=true;
+        data->music2.stop();
+        data->music2.play();
 
 
     }
@@ -86,6 +88,7 @@ void HeroAttackState::Update() {
             explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
             countExplosion = 0;
             data->enemyptr->takeDamage(damage);
+
         }
         if (data->enemyptr->isDead() == false&&data->heroptr->isAttackEnded()&&isExplosion==false) {
             if (data->again) {
@@ -108,6 +111,9 @@ void HeroAttackState::Update() {
         data->again = false;
         data->heroptr->resetBonus();
 
+        data->music1.stop();
+        data->music1.openFromFile("./music/deltarune.wav");
+        data->music1.play();
         this->data->machine.setNewState(StateRef(new LootState(data)));
         this->data->machine.setReplace(true);
         data->heroptr->setMoney(data->heroptr->getMoney() + data->level * 5 + rand() % 6);

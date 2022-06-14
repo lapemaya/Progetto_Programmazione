@@ -109,6 +109,7 @@ void MainMenuState::HandleInput() {
                                          (500 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                     this->data->machine.setNewState(StateRef(new ClassMenuState(data)));
                     this->data->machine.setReplace(true);
+                    data->music3.play();
 
                 }
                 if (data->input.response((1400 * data->lenght) / 1920, (700 * data->width) / 1080,
@@ -119,10 +120,8 @@ void MainMenuState::HandleInput() {
                                          (500 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                     this->data->machine.setNewState(StateRef(new HowState(data)));
                     this->data->machine.setReplace(true);
-                    delete text1;
-                    delete text2;
-                    delete text3;
-                    delete text4;
+                    data->music3.play();
+
                 }
                 }
             }

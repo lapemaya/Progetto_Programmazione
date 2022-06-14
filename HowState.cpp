@@ -43,15 +43,21 @@ void HowState::HandleInput() {
                                      (250 * data->lenght) / 1920, (250 * data->width) / 1080)) {
                 data->bye++;
                 data->menu->setTextureRect(sf::IntRect(1920* data->bye, 0, 1920, 1080) );
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((0 * data->lenght) / 1920, (830 * data->width) / 1080,
                                      (250 * data->lenght) / 1920, (250 * data->width) / 1080)) {
                 data->bye--;
                 data->menu->setTextureRect(sf::IntRect(1920* data->bye, 0, 1920, 1080) );
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((0 * data->lenght) / 1920, (0 * data->width) / 1080,
                                      (250 * data->lenght) / 1920, (250 * data->width) / 1080)) {
                 data->bye=6;
+                data->music3.stop();
+                data->music3.play();
             }
         }
         }

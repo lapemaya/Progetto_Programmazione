@@ -32,6 +32,8 @@ private:
     sf::Clock clock1;
     sf::Text* text1;
     sf::Text* text2;
+    sf::Text* text3;
+    bool end=false;
 
 };
 

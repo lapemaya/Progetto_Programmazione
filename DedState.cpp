@@ -56,6 +56,23 @@ void DedState::Init() {
     text2->setOutlineThickness(5);
     text2->setOutlineColor(sf::Color::Red);
     /////////////////////////////////////////////////
+    std::stringstream ciao3;
+    ciao3<<"Ya Ded\nRecord= "<<data->level;
+
+    auto texti3=new sf::Text;
+    text3=texti3;
+
+    text3->setFont(data->font);
+    text3->setString(ciao3.str());
+
+    text3->setCharacterSize(100);
+    text3->setScale(data->lenght/1920,data->width/1080);
+    text3->setPosition((760*data->lenght)/1920,(200*data->width)/1080);
+
+    text3->setFillColor(sf::Color::Black);
+    text3->setOutlineThickness(5);
+    text3->setOutlineColor(sf::Color::Red);
+    /////////////////////////////////////////////////
 }
 
 void DedState::HandleInput() {
@@ -76,6 +93,11 @@ void DedState::HandleInput() {
                 this->data->machine.setNewState(StateRef(new ClassMenuState(data)));
                 this->data->machine.setReplace(true);
                 data->first=true;
+                data->music3.stop();
+                data->music3.play();
+                data->music1.stop();
+                data->music1.openFromFile("./music/hollow.wav");
+                data->music1.play();
 
             }
             if (data->input.response((1200 * data->lenght) / 1920, (600 * data->width) / 1080,
@@ -90,4 +112,5 @@ void DedState::Draw() {
 data->window.draw(*data->menu);
     data->window.draw(*text1);
     data->window.draw(*text2);
+    data->window.draw(*text3);
 }

@@ -37,10 +37,14 @@ void HeroCheckState::HandleInput() {
             if(data->prima){
                 this->data->machine.setNewState(StateRef(new LootState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
             }
             else{
                 this->data->machine.setNewState(StateRef(new ShopState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
             }
         }
         }

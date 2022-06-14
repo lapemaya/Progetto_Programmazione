@@ -226,6 +226,8 @@ void ShopState::HandleInput() {
                     data->Vtool.clear();
                     this->data->machine.setNewState(StateRef(new StatState(data)));
                     this->data->machine.setReplace(true);
+                    data->music3.stop();
+                    data->music3.play();
                 }
             }
             if (data->input.response((900 * data->lenght) / 1920, (600 * data->width) / 1080,
@@ -239,6 +241,8 @@ void ShopState::HandleInput() {
                     data->Vtool.clear();
                     this->data->machine.setNewState(StateRef(new StatState(data)));
                     this->data->machine.setReplace(true);
+                    data->music3.stop();
+                    data->music3.play();
                 }
             }
             if (data->input.response((1300 * data->lenght) / 1920, (600 * data->width) / 1080,
@@ -252,6 +256,8 @@ void ShopState::HandleInput() {
                     data->Vtool.clear();
                     this->data->machine.setNewState(StateRef(new StatState(data)));
                     this->data->machine.setReplace(true);
+                    data->music3.stop();
+                    data->music3.play();
                 }
             }
             if (data->input.response((775 * data->lenght) / 1920, (900 * data->width) / 1080,
@@ -263,6 +269,8 @@ void ShopState::HandleInput() {
                 data->Vtool.clear();
                 this->data->machine.setNewState(StateRef(new StatState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
 
             }
 
@@ -271,6 +279,8 @@ void ShopState::HandleInput() {
 
                 this->data->machine.setNewState(StateRef(new HeroCheckState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
             }
 
         }

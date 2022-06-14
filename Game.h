@@ -15,6 +15,7 @@
 #include "Enemy.h"
 #include "Ping.h"
 #include "ToolInterface.h"
+#include "SFML/Audio.hpp"
     struct GameData {
         StateMachine machine;
         sf::RenderWindow window;
@@ -28,7 +29,10 @@
         std::vector<Ping*> V;
         std::vector<Tool*> Vtool;
         ToolInterface toolInterface;
-
+        sf::Music music1;
+        sf::Music music2;
+        sf::Music music3;
+        sf::Music music4;
 
         int bye=0;
         int PingHit;

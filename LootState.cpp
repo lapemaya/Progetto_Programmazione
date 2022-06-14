@@ -175,6 +175,8 @@ void LootState::HandleInput() {
                 this->data->machine.setReplace(true);
                 data->first=true;
                 data->prima=false;
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((900 * data->lenght) / 1920, (600 * data->width) / 1080,
                                      (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
@@ -188,6 +190,8 @@ void LootState::HandleInput() {
                 this->data->machine.setReplace(true);
                 data->first=true;
                 data->prima=false;
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((1300 * data->lenght) / 1920, (600 * data->width) / 1080,
                                      (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
@@ -201,6 +205,8 @@ void LootState::HandleInput() {
                 this->data->machine.setReplace(true);
                 data->first=true;
                 data->prima=false;
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((775 * data->lenght) / 1920, (900 * data->width) / 1080,
                                      (500 * data->lenght) / 1920, (100 * data->width) / 1080)) {
@@ -214,12 +220,16 @@ void LootState::HandleInput() {
                 data->heroptr->setMoney(data->heroptr->getMoney() + 10);
                 data->first=true;
                 data->prima=false;
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((1300 * data->lenght) / 1920, (200 * data->width) / 1080,
                                      (300 * data->lenght) / 1920, (200 * data->width) / 1080)) {
 
                 this->data->machine.setNewState(StateRef(new HeroCheckState(data)));
                 this->data->machine.setReplace(true);
+                data->music3.stop();
+                data->music3.play();
             }
         }
         }

@@ -136,6 +136,12 @@ void StatState::HandleInput() {
 
                 data->heroptr->setHp(data->heroptr->getMaxHp());
                 data->heroptr->setStaminaLeft(data->heroptr->getStaminaBar());
+                data->music1.stop();
+                data->music1.openFromFile("./music/hollow.wav");
+                data->music1.play();
+
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((900 * data->lenght) / 1920, (500 * data->width) / 1080,
                                      (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
@@ -153,6 +159,12 @@ void StatState::HandleInput() {
 
                 data->heroptr->setHp(data->heroptr->getMaxHp());
                 data->heroptr->setStaminaLeft(data->heroptr->getStaminaBar());
+                data->music1.stop();
+                data->music1.openFromFile("./music/hollow.wav");
+                data->music1.play();
+
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((1300 * data->lenght) / 1920, (500 * data->width) / 1080,
                                      (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
@@ -170,6 +182,12 @@ void StatState::HandleInput() {
 
                 data->heroptr->setHp(data->heroptr->getMaxHp());
                 data->heroptr->setStaminaLeft(data->heroptr->getStaminaBar());
+                data->music1.stop();
+                data->music1.openFromFile("./music/hollow.wav");
+                data->music1.play();
+
+                data->music3.stop();
+                data->music3.play();
             }
             if (data->input.response((775 * data->lenght) / 1920, (900 * data->width) / 1080,
                                      (500 * data->lenght) / 1920, (100 * data->width) / 1080)) {
@@ -185,6 +203,12 @@ void StatState::HandleInput() {
 
                 data->heroptr->setHp(data->heroptr->getMaxHp());
                 data->heroptr->setStaminaLeft(data->heroptr->getStaminaBar());
+                data->music1.stop();
+                data->music1.openFromFile("./music/hollow.wav");
+
+                data->music1.play();
+                data->music3.stop();
+                data->music3.play();
 
             }
         }
