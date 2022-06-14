@@ -13,7 +13,7 @@ class InputManager {
         InputManager() = default;
         ~InputManager() = default;
 
-        bool response(int x,int y,int dx,int dy,sf::Vector2i globalPosition);
+        bool response(int x,int y,int dx,int dy);
 
 
 };

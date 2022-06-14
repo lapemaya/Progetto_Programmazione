@@ -121,7 +121,7 @@ void StatState::HandleInput() {
         if (event.mouseButton.button == sf::Mouse::Left) {
             int quale;
             if (data->input.response((500 * data->lenght) / 1920, (500 * data->width) / 1080,
-                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                 quale = 0;
                 data->heroptr->upgradeStat(quale);
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
@@ -138,7 +138,7 @@ void StatState::HandleInput() {
                 data->heroptr->setStaminaLeft(data->heroptr->getStaminaBar());
             }
             if (data->input.response((900 * data->lenght) / 1920, (500 * data->width) / 1080,
-                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                 quale = 1;
                 data->heroptr->upgradeStat(quale);
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
@@ -155,7 +155,7 @@ void StatState::HandleInput() {
                 data->heroptr->setStaminaLeft(data->heroptr->getStaminaBar());
             }
             if (data->input.response((1300 * data->lenght) / 1920, (500 * data->width) / 1080,
-                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                 quale = 2;
                 data->heroptr->upgradeStat(quale);
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
@@ -172,7 +172,7 @@ void StatState::HandleInput() {
                 data->heroptr->setStaminaLeft(data->heroptr->getStaminaBar());
             }
             if (data->input.response((775 * data->lenght) / 1920, (900 * data->width) / 1080,
-                                     (500 * data->lenght) / 1920, (100 * data->width) / 1080, globalPosition)) {
+                                     (500 * data->lenght) / 1920, (100 * data->width) / 1080)) {
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
                 this->data->machine.setReplace(true);
 

@@ -22,7 +22,7 @@
     }
 
     void Game::Run() {
-        srand(time(NULL));
+
 
         while (this->data->window.isOpen()) {
             if(data->machine.isReplace()) {

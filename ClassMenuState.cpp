@@ -105,13 +105,16 @@ void ClassMenuState::HandleInput() {
         if (event.mouseButton.button == sf::Mouse::Left) {
 
             if (data->input.response((100 * data->lenght) / 1920, (300 * data->width) / 1080,
-                                     (500 * data->lenght) / 1920, (600 * data->width) / 1080, globalPosition)) {
-                //TODO mage
+                                     (500 * data->lenght) / 1920, (600 * data->width) / 1080)) {
+
+                data-> heroptr=new Mage;
+                this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
+                this->data->machine.setReplace(true);
 
             }
             if (data->input.response((730 * data->lenght) / 1920, (300 * data->width) / 1080,
-                                     (500 * data->lenght) / 1920, (600 * data->width) / 1080, globalPosition)) {
-                //TODO knight
+                                     (500 * data->lenght) / 1920, (600 * data->width) / 1080)) {
+
                data-> heroptr=new Knight;
                 this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
                 this->data->machine.setReplace(true);
@@ -119,8 +122,11 @@ void ClassMenuState::HandleInput() {
 
             }
             if (data->input.response((1350 * data->lenght) / 1920, (300 * data->width) / 1080,
-                                     (500 * data->lenght) / 1920, (600 * data->width) / 1080, globalPosition)) {
-                //TODO Druid
+                                     (500 * data->lenght) / 1920, (600 * data->width) / 1080)) {
+
+                data-> heroptr=new Druid;
+                this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
+                this->data->machine.setReplace(true);
 
             }
             }

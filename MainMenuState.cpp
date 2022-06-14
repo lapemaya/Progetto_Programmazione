@@ -106,17 +106,17 @@ void MainMenuState::HandleInput() {
         if (event.type == sf::Event::MouseButtonPressed) {
             if (event.mouseButton.button == sf::Mouse::Left) {
                 if (data->input.response((1400 * data->lenght) / 1920, (300 * data->width) / 1080,
-                                         (500 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                         (500 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                     this->data->machine.setNewState(StateRef(new ClassMenuState(data)));
                     this->data->machine.setReplace(true);
 
                 }
                 if (data->input.response((1400 * data->lenght) / 1920, (700 * data->width) / 1080,
-                                         (500 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                         (500 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                     this->data->window.close();
                 }
                 if (data->input.response((1400 * data->lenght) / 1920, (500 * data->width) / 1080,
-                                         (500 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                         (500 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                     this->data->machine.setNewState(StateRef(new HowState(data)));
                     this->data->machine.setReplace(true);
                     delete text1;

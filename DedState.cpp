@@ -69,7 +69,7 @@ void DedState::HandleInput() {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             if (data->input.response((200 * data->lenght) / 1920, (600 * data->width) / 1080,
-                                     (500 * data->lenght) / 1920, (300 * data->width) / 1080, globalPosition)) {
+                                     (500 * data->lenght) / 1920, (300 * data->width) / 1080)) {
                 delete data->heroptr;
                 delete data->enemyptr;
                 data->level = 1;
@@ -79,7 +79,7 @@ void DedState::HandleInput() {
 
             }
             if (data->input.response((1200 * data->lenght) / 1920, (600 * data->width) / 1080,
-                                     (500 * data->lenght) / 1920, (300 * data->width) / 1080, globalPosition)) {
+                                     (500 * data->lenght) / 1920, (300 * data->width) / 1080)) {
                 this->data->window.close();
 
             }

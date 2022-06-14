@@ -80,7 +80,7 @@ void HeroAttackState::Update() {
         while (clock1.getElapsedTime() < time1) {}
 
         if (countExplosion == 16) {
-            //TODO cambio fase
+
             data->heroptr->setAttackEnded(true);
             isExplosion = false;
             explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
@@ -136,8 +136,9 @@ void HeroAttackState::HandleInput() {
 
 void HeroAttackState::Draw() {
     data->window.draw(*data->menu);
-    data->heroptr->drawHero(data->window);
+
     data->enemyptr->drawMe(data->window);
+    data->heroptr->drawHero(data->window);
     if(isExplosion){
         data->window.draw(*this->explosion);
         data->window.draw(*text1);

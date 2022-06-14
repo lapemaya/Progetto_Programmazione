@@ -70,7 +70,7 @@ void PingState::Init() {
 
 void PingState::HandleInput() {
     sf::Event event;
-    sf::Vector2i globalPosition = sf::Mouse::getPosition();
+
     while (this->data->window.pollEvent(event))
         if (sf::Event::Closed == event.type) {
             this->data->window.close();
@@ -167,7 +167,7 @@ void PingState::clickPing(std::vector<Ping *> &V) {
     int N=V.size();
     sf::Vector2i globalPosition = sf::Mouse::getPosition();
 
-    int i=0;
+
     Ping controllo;
     int dimx=(100*data->lenght) / 1920;
     int dimy=(100* data->width) / 1080;

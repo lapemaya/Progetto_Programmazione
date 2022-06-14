@@ -164,7 +164,7 @@ void LootState::HandleInput() {
         if (event.mouseButton.button == sf::Mouse::Left) {
 
             if (data->input.response((500 * data->lenght) / 1920, (600 * data->width) / 1080,
-                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                 auto tool = data->Vtool.at(0);
                 data->heroptr->changeTool(tool);
                 for (int i = 0; i < 3; i++) {
@@ -177,7 +177,7 @@ void LootState::HandleInput() {
                 data->prima=false;
             }
             if (data->input.response((900 * data->lenght) / 1920, (600 * data->width) / 1080,
-                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                 auto tool = data->Vtool.at(1);
                 data->heroptr->changeTool(tool);
                 for (int i = 0; i < 3; i++) {
@@ -190,7 +190,7 @@ void LootState::HandleInput() {
                 data->prima=false;
             }
             if (data->input.response((1300 * data->lenght) / 1920, (600 * data->width) / 1080,
-                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                 auto tool = data->Vtool.at(2);
                 data->heroptr->changeTool(tool);
                 for (int i = 0; i < 3; i++) {
@@ -203,7 +203,7 @@ void LootState::HandleInput() {
                 data->prima=false;
             }
             if (data->input.response((775 * data->lenght) / 1920, (900 * data->width) / 1080,
-                                     (500 * data->lenght) / 1920, (100 * data->width) / 1080, globalPosition)) {
+                                     (500 * data->lenght) / 1920, (100 * data->width) / 1080)) {
 
                 for (int i = 0; i < 3; i++) {
                     delete data->Vtool.at(i);
@@ -216,7 +216,7 @@ void LootState::HandleInput() {
                 data->prima=false;
             }
             if (data->input.response((1300 * data->lenght) / 1920, (200 * data->width) / 1080,
-                                     (300 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                     (300 * data->lenght) / 1920, (200 * data->width) / 1080)) {
 
                 this->data->machine.setNewState(StateRef(new HeroCheckState(data)));
                 this->data->machine.setReplace(true);

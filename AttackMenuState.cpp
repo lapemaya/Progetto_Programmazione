@@ -162,7 +162,7 @@ void AttackMenuState::HandleInput() {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             if (data->input.response((1000 * data->lenght) / 1920, (400 * data->width) / 1080,
-                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                     (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                 //regen
                 data->heroptr->regen();
                 data->heroptr->setHasLight(false);
@@ -173,7 +173,7 @@ void AttackMenuState::HandleInput() {
             }
             if(data->heroptr->canAttack()) {
                 if (data->input.response((800 * data->lenght) / 1920, (200 * data->width) / 1080,
-                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                     //normal
 
                     data->heroptr->setAttack(0);
@@ -182,7 +182,7 @@ void AttackMenuState::HandleInput() {
                     this->data->machine.setReplace(true);
                 }
                 if (data->input.response((800 * data->lenght) / 1920, (400 * data->width) / 1080,
-                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                     if(data->heroptr->isHasLight()==false) {
                         //light
                         data->heroptr->setAttack(1);
@@ -192,7 +192,7 @@ void AttackMenuState::HandleInput() {
                     }
                 }
                 if (data->input.response((1000 * data->lenght) / 1920, (200 * data->width) / 1080,
-                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080, globalPosition)) {
+                                         (200 * data->lenght) / 1920, (200 * data->width) / 1080)) {
                     //strong
                     data->heroptr->setAttack(2);
                     data->heroptr->setHasLight(false);

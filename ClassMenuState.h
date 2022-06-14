@@ -8,6 +8,8 @@
 #include "Game.h"
 #include "ClassMenu.h"
 #include "Knight.h"
+#include "Mage.h"
+#include "Druid.h"
 #include "AttackMenuState.h"
 class ClassMenuState:public State {
 public:

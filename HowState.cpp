@@ -40,17 +40,17 @@ void HowState::HandleInput() {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             if (data->input.response((1670 * data->lenght) / 1920, (830 * data->width) / 1080,
-                                     (250 * data->lenght) / 1920, (250 * data->width) / 1080, globalPosition)) {
+                                     (250 * data->lenght) / 1920, (250 * data->width) / 1080)) {
                 data->bye++;
                 data->menu->setTextureRect(sf::IntRect(1920* data->bye, 0, 1920, 1080) );
             }
             if (data->input.response((0 * data->lenght) / 1920, (830 * data->width) / 1080,
-                                     (250 * data->lenght) / 1920, (250 * data->width) / 1080, globalPosition)) {
+                                     (250 * data->lenght) / 1920, (250 * data->width) / 1080)) {
                 data->bye--;
                 data->menu->setTextureRect(sf::IntRect(1920* data->bye, 0, 1920, 1080) );
             }
             if (data->input.response((0 * data->lenght) / 1920, (0 * data->width) / 1080,
-                                     (250 * data->lenght) / 1920, (250 * data->width) / 1080, globalPosition)) {
+                                     (250 * data->lenght) / 1920, (250 * data->width) / 1080)) {
                 data->bye=6;
             }
         }
