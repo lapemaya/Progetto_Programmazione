@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/lapo/CLionProjects/gioco2/cmake-build-debug/
+cmake_ninja_workdir = /home/lapo/Desktop/gioco2/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target gioco2
 
@@ -49,293 +49,389 @@ cmake_ninja_workdir = /home/lapo/CLionProjects/gioco2/cmake-build-debug/
 
 build cmake_object_order_depends_target_gioco2: phony || CMakeFiles/gioco2.dir
 
-build CMakeFiles/gioco2.dir/main.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/main.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/main.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/main.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/main.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/StateMachine.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/StateMachine.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/StateMachine.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/StateMachine.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/StateMachine.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Game.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Game.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Game.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Game.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Game.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/MainMenuState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/MainMenuState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/MainMenuState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/MainMenuState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/MainMenuState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/MainMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/MainMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/MainMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/MainMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/MainMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/InputManager.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/InputManager.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/InputManager.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/InputManager.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/InputManager.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/ClassMenuState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/ClassMenuState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/ClassMenuState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/ClassMenuState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/ClassMenuState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/ClassMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/ClassMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/ClassMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/ClassMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/ClassMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Knight.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Knight.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Knight.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Knight.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Knight.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Hero.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Hero.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Hero.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Hero.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Hero.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Tool.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Tool.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Tool.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Tool.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Tool.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Torso.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Torso.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Torso.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Torso.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Torso.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Anello.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Anello.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Anello.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Anello.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Anello.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Shoes.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Shoes.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Shoes.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Shoes.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Shoes.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/SpecialTool.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/SpecialTool.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/SpecialTool.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/SpecialTool.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/SpecialTool.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Sword.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Sword.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Sword.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Sword.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Sword.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Wand.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Wand.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Wand.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Wand.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Wand.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Nature.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Nature.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Nature.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Nature.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Nature.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/AttackMenuState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/AttackMenuState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/AttackMenuState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/AttackMenuState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/AttackMenuState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/AttackMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/AttackMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/AttackMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/AttackMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/AttackMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Enemy.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Enemy.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Enemy.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Enemy.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Enemy.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Goblin.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Goblin.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Goblin.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Goblin.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Goblin.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Dragon.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Dragon.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Dragon.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Dragon.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Dragon.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Fireball.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Fireball.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Fireball.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Fireball.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Fireball.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Rat.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Rat.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Rat.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Rat.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Rat.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/PingState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/PingState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/PingState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/PingState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/PingState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/NullMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/NullMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/NullMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/NullMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/NullMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Ping.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Ping.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Ping.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Ping.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Ping.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/HeroAttackState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/HeroAttackState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/HeroAttackState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/HeroAttackState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/HeroAttackState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/EnemyAttackState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/EnemyAttackState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/EnemyAttackState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/EnemyAttackState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/EnemyAttackState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/DedState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/DedState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/DedState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/DedState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/DedState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/DedMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/DedMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/DedMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/DedMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/DedMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/LootMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/LootMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/LootMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/LootMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/LootMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/LootState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/LootState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/LootState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/LootState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/LootState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/ShopMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/ShopMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/ShopMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/ShopMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/ShopMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/ShopState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/ShopState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/ShopState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/ShopState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/ShopState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/StatMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/StatMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/StatMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/StatMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/StatMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/StatState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/StatState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/StatState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/StatState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/StatState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/HeroCheckState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/HeroCheckState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/HeroCheckState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/HeroCheckState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/HeroCheckState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/HeroCheckMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/HeroCheckMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/HeroCheckMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/HeroCheckMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/HeroCheckMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/HowMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/HowMenu.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/HowMenu.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/HowMenu.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/HowMenu.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/HowState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/HowState.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/HowState.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/HowState.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/HowState.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/ToolFactory.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/ToolFactory.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/ToolFactory.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/ToolFactory.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/ToolFactory.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/ToolInterface.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/ToolInterface.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/ToolInterface.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/ToolInterface.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/ToolInterface.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Mage.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Mage.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Mage.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Mage.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Mage.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Druid.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Druid.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Druid.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Druid.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Druid.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/Leaf.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/Leaf.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/Leaf.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/Leaf.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/Leaf.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
-build CMakeFiles/gioco2.dir/DruidFlames.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/CLionProjects/gioco2/DruidFlames.cpp || cmake_object_order_depends_target_gioco2
+build CMakeFiles/gioco2.dir/DruidFlames.cpp.o: CXX_COMPILER__gioco2_Debug /home/lapo/Desktop/gioco2/DruidFlames.cpp || cmake_object_order_depends_target_gioco2
   DEP_FILE = CMakeFiles/gioco2.dir/DruidFlames.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/gioco2.dir
   OBJECT_FILE_DIR = CMakeFiles/gioco2.dir
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
+  TARGET_PDB = gioco2.pdb
 
 
 # =============================================================================
@@ -351,15 +447,16 @@ build gioco2: CXX_EXECUTABLE_LINKER__gioco2_Debug CMakeFiles/gioco2.dir/main.cpp
   OBJECT_DIR = CMakeFiles/gioco2.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/gioco2.dir/
   TARGET_FILE = gioco2
-  TARGET_PDB = gioco2.dbg
+  TARGET_PDB = gioco2.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/lapo/CLionProjects/gioco2/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/ccmake -S/home/lapo/CLionProjects/gioco2 -B/home/lapo/CLionProjects/gioco2/cmake-build-debug
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/ccmake -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -371,7 +468,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/lapo/CLionProjects/gioco2/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/lapo/CLionProjects/gioco2 -B/home/lapo/CLionProjects/gioco2/cmake-build-debug
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -387,7 +484,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/lapo/CLionProjects/gioco2/cmake-build-debug
+# Folder: /home/lapo/Desktop/gioco2/cmake-build-debug
 
 build all: phony gioco2
 
@@ -398,14 +495,14 @@ build all: phony gioco2
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

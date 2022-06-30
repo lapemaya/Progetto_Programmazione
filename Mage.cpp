@@ -132,7 +132,7 @@ int Mage::Attack() {
         damage=damage*1.5;
 
     }
-
+    staminaLeft-=2;
     return damage;
 }
 

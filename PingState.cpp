@@ -73,12 +73,21 @@ void PingState::Update() {
     value=(float)value / 10;
     ciao3<<(value);
     text3->setString(ciao3.str());
-
+    if(data->V.size()==0){
+        end=true;
+    }
     if(clock1.getElapsedTime()>time1){
         end=true;}
     if(end){
         this->data->machine.setNewState(StateRef(new HeroAttackState(data)));
         this->data->machine.setReplace(true);
+        hit=false;
+    }
+    if(hit){
+        delete data->V.at(quale);
+        data->V.erase(data->V.begin()+quale);
+        hit=false;
+
     }
 }
 
@@ -87,7 +96,7 @@ void PingState::Init() {
     data->menu=new NullMenu();
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
     this->creationPing(data->heroptr->getNping(),data->V);
-    time1=sf::seconds(3+(data->heroptr->getNping()/7)+0.5*data->heroptr->getShoes()->getRarity());
+    time1=sf::seconds(3+(data->heroptr->getNping()/7)+0.25*(data->heroptr->getStaminaBar()-6));
     clock1.restart();
 
 
@@ -103,7 +112,7 @@ void PingState::HandleInput() {
         }
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
-            clickPing(data->V);
+            clickPing();
         }
         }
 
@@ -190,8 +199,8 @@ void PingState::drawPings(std::vector<Ping *> &V) {
     }
 }
 
-void PingState::clickPing(std::vector<Ping *> &V) {
-    int N=V.size();
+void PingState::clickPing() {
+    int N=data->V.size();
     sf::Vector2i globalPosition = sf::Mouse::getPosition();
 
 
@@ -199,12 +208,12 @@ void PingState::clickPing(std::vector<Ping *> &V) {
     int dimx=(100*data->lenght) / 1920;
     int dimy=(100* data->width) / 1080;
     for (int i = 0; i < N; i++) {
-        controllo = *V.at(i);
+        controllo = *data->V.at(i);
 
         if (globalPosition.x > controllo.getPosx() && globalPosition.x < controllo.getPosx() + dimx
             && globalPosition.y >controllo.getPosy() && globalPosition.y < controllo.getPosy() +dimy) {
-            delete V.at(i);
-            V.erase(V.begin()+i);
+            hit=true;
+            quale=i;
             data->bye++;
             N=N-data->bye;
             data->PingHit++;
@@ -214,7 +223,5 @@ void PingState::clickPing(std::vector<Ping *> &V) {
         }
 
     }
-    if(data->V.size()==0){
-        end=true;
-    }
+
 }

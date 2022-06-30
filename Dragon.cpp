@@ -21,7 +21,7 @@ Dragon::Dragon(int N) {
     this->setTexture(*texture);
     this->setTextureRect(sf::IntRect(0, 0, 64, 64));
     this->setPosition(posx,posy);
-    this->setScale(6.25,6.25);
+    this->setScale(3.125,3.125);
     auto fireptr1=new Fireball(1400,400);
     this->fireptr=fireptr1;
     fireptr->setPosx(1400);

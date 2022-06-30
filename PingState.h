@@ -25,7 +25,7 @@ public:
 
     void creationPing(int N,std::vector<Ping*> &V);
     void drawPings(std::vector<Ping*> &V);
-    void clickPing(std::vector<Ping*> &V);
+    void clickPing();
 private:
     GameDataRef data;
     sf::Time time1;
@@ -34,6 +34,8 @@ private:
     sf::Text* text2;
     sf::Text* text3;
     bool end=false;
+    bool hit=false;
+    int quale=0;
 
 };
 

@@ -4,6 +4,7 @@
 
 #ifndef GIOCO2_ATTACKMENUSTATE_H
 #define GIOCO2_ATTACKMENUSTATE_H
+
 #include "State.h"
 #include "Game.h"
 #include "AttackMenu.h"
@@ -34,6 +35,7 @@ private:
     sf::Text* text4;
     sf::Text* text5;
     sf::Text* text6;
+    sf::Sprite* X;
 
 };
 

@@ -4,7 +4,7 @@
 
 #ifndef GIOCO2_MAINMENUSTATE_H
 #define GIOCO2_MAINMENUSTATE_H
-#pragma once
+
 #include "State.h"
 #include "MainMenu.h"
 #include "Game.h"

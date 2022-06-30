@@ -26,7 +26,7 @@ Druid::Druid() {
     auto nature1=new Nature;
     this->specialTool=nature1;
 
-    maxHp=10;
+    maxHp=9999;
     Hp=maxHp;
     stamina=6;
     nping=4;
@@ -181,7 +181,7 @@ int Druid::Attack() {
         damage = damage * 2;
         }
 
-
+    staminaLeft-=2;
     return damage;
 }
 

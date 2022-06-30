@@ -95,8 +95,9 @@ void DedState::HandleInput() {
                 data->first=true;
                 data->music3.stop();
                 data->music3.play();
+
                 data->music1.stop();
-                data->music1.openFromFile("./music/hollow.wav");
+                data->music1.openFromFile("./music/elevator.wav");
                 data->music1.play();
 
             }

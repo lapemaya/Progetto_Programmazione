@@ -15,7 +15,13 @@ void AttackMenuState::Init() {
     data->menu=new AttackMenu();
     data->menu->setScale(((1 * data->lenght) / 1920), ((1 * data->width) / 1080));
 
-
+    X=new sf::Sprite;
+    auto texture1=new sf::Texture;
+    texture1->loadFromFile("./sprite/Varie/X.png");
+    X->setTexture(*texture1);
+    X->setTextureRect(sf::IntRect(0, 0, 32, 32));
+    X->setPosition((800*data->lenght) / 1920,(400*data->width) / 1080);
+    X->setScale(((6.25 * data->lenght) / 1920), ((6.25  * data->width) / 1080));
 
 
     if(data->first){
@@ -26,10 +32,9 @@ void AttackMenuState::Init() {
         data->heroptr->setPosition(data->heroptr->getPosx(), data->heroptr->getPosy());
         data->heroptr->setScale(((12.5 * data->lenght) / 1920), ((12.5 * data->width) / 1080));
 
-        data->enemyptr->setPosx(data->lenght - ((data->lenght * (1920 - data->enemyptr->getPosx())) / 1920));
-        data->enemyptr->setPosx((data->enemyptr->getPosx() * data->width) / 1080);
-        data->enemyptr->setPosition(data->enemyptr->getPosx(), data->enemyptr->getPosy());
-        data->enemyptr->setScale(((12.5 * data->lenght) / 1920), ((12.5 * data->width) / 1080));
+
+
+
         data->music1.openFromFile("./music/hollow.wav");
         data->music1.setPlayingOffset(sf::seconds(43));
         data->music1.play();
@@ -216,6 +221,8 @@ void AttackMenuState::HandleInput() {
 }
 
 void AttackMenuState::Draw() {
+
+
     data->window.draw(*data->menu);
     data->window.draw(*data->heroptr);
     data->window.draw(*data->enemyptr);
@@ -226,17 +233,37 @@ void AttackMenuState::Draw() {
     data->window.draw(*text5);
     data->window.draw(*text6);
 
+    if(data->heroptr->isHasLight()){
+        data->window.draw(*X);
+    }
+    if(data->heroptr->canAttack()==false){
+        X->setPosition((800*data->lenght) / 1920,(400*data->width) / 1080);
+        data->window.draw(*X);
+        X->setPosition((800*data->lenght) / 1920,(200*data->width) / 1080);
+        data->window.draw(*X);
+        X->setPosition((1000*data->lenght) / 1920,(200*data->width) / 1080);
+        data->window.draw(*X);
+        X->setPosition((800*data->lenght) / 1920,(400*data->width) / 1080);
+    }
+
 }
 
 void AttackMenuState::creationEnemy() {
     int random=rand()%3;
 
     if(random==0){
-        data->enemyptr=new Goblin(data->level);}
+        data->enemyptr=new Goblin(data->level);
+    data->enemyptr->setScale(((12.5 * data->lenght) / 1920), ((12.5 * data->width) / 1080));}
     if(random==1){
-        data->enemyptr=new Rat(data->level);}
-    if(random==2){
-        data->enemyptr=new Dragon(data->level);}
+        data->enemyptr=new Rat(data->level);
+    data->enemyptr->setScale(((12.5 * data->lenght) / 1920), ((12.5 * data->width) / 1080));}
+    if(random==2) {
+        data->enemyptr = new Dragon(data->level);
+        data->enemyptr->setScale(((9 * data->lenght) / 1920), ((9 * data->width) / 1080));
+        data->enemyptr->setPosx(data->lenght - ((data->lenght * (1920 - data->enemyptr->getPosx())) / 1920));
+        data->enemyptr->setPosy(((data->enemyptr->getPosy() * data->width) / 1080) - 208);
+        data->enemyptr->setPosition(data->enemyptr->getPosx(), data->enemyptr->getPosy());
+    }
 }
 
 

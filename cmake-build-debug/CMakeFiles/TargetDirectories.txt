@@ -1,3 +1,3 @@
-/home/lapo/CLionProjects/gioco2/cmake-build-debug/CMakeFiles/gioco2.dir
-/home/lapo/CLionProjects/gioco2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/lapo/CLionProjects/gioco2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lapo/Desktop/gioco2/cmake-build-debug/CMakeFiles/gioco2.dir
+/home/lapo/Desktop/gioco2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lapo/Desktop/gioco2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
