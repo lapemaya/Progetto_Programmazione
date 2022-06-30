@@ -17,16 +17,17 @@ Druid::Druid() {
     DruidFlames* flame1t=new DruidFlames(0,500);
     DruidFlames* flame2t=new DruidFlames(200,300);
     DruidFlames* flame3t=new DruidFlames(400,500);
+    Vd.push_back(flame1t);
+    Vd.push_back(flame2t);
+    Vd.push_back(flame3t);
     Leaf* leaf=new Leaf();
 
-    this->setFlame1(flame1t);
-    this->setFlame2(flame2t);
-    this->setFlame3(flame3t);
+
     this->leaf=leaf;
     auto nature1=new Nature;
     this->specialTool=nature1;
 
-    maxHp=9999;
+    maxHp=10;
     Hp=maxHp;
     stamina=6;
     nping=4;
@@ -37,9 +38,9 @@ Druid::Druid() {
 
 Druid::~Druid() {
     delete this->leaf;
-    delete this->flame1;
-    delete this->flame2;
-    delete this->flame3;
+    for(int i=0;i<3;i++)
+        Vd.erase(Vd.begin());
+
 }
 
 void Druid::attackAnimation() {
@@ -129,25 +130,25 @@ void Druid::drawHero(sf::RenderWindow &finestra) {
         finestra.draw(*this);
         if (this->faseAttack == 0) {
             if (this->countAttack == 1){
-                finestra.draw(*(this->getFlame1()));
+                finestra.draw(*Vd.at(0));
             }
             if (this->countAttack == 2) {
-                finestra.draw(*(this->getFlame1()));
-                finestra.draw(*(this->getFlame2()));
+                finestra.draw(*Vd.at(0));
+                finestra.draw(*Vd.at(1));
 
             }
             if (this->countAttack == 3) {
-                finestra.draw(*(this->getFlame1()));
-                finestra.draw(*(this->getFlame2()));
-                finestra.draw(*(this->getFlame3()));
+                finestra.draw(*Vd.at(0));
+                finestra.draw(*Vd.at(1));
+                finestra.draw(*Vd.at(2));
 
             }
 
         }
         if (this->faseAttack == 1) {
-            finestra.draw(*(this->getFlame1()));
-            finestra.draw(*(this->getFlame2()));
-            finestra.draw(*(this->getFlame3()));
+            finestra.draw(*Vd.at(0));
+            finestra.draw(*Vd.at(1));
+            finestra.draw(*Vd.at(2));
             finestra.draw(*(this->leaf));
 
         }

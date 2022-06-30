@@ -20,34 +20,11 @@ public:
     void resetBonus()override;
     virtual int Attack()override;
 
-    DruidFlames *getFlame1() const {
-        return flame1;
-    }
 
-    void setFlame1(DruidFlames *flame1) {
-        Druid::flame1 = flame1;
-    }
-
-    DruidFlames *getFlame2() const {
-        return flame2;
-    }
-
-    void setFlame2(DruidFlames *flame2) {
-        Druid::flame2 = flame2;
-    }
-
-    DruidFlames *getFlame3() const {
-        return flame3;
-    }
-
-    void setFlame3(DruidFlames *flame3) {
-        Druid::flame3 = flame3;
-    }
 
 private:
-    DruidFlames* flame1;
-    DruidFlames* flame2;
-    DruidFlames* flame3;
+    std::vector<DruidFlames*> Vd;
+
     Leaf* leaf;
     Nature* nature;
     int transform=0;
