@@ -6,11 +6,11 @@
 
 Hero::Hero(){
 
-    auto torso1=new Torso();
+    auto torso1=new Tool(0);
     this->torso=torso1;
-    auto ring1=new Anello();
+    auto ring1=new Tool(2);
     this->ring=ring1;
-    auto shoes1=new Shoes();
+    auto shoes1=new Tool(1);
     this->shoes=shoes1;
 
 
@@ -101,16 +101,16 @@ void Hero::upgrade(Tool* tool) {
 
     int controll=tool->getType();
     if(controll==2){
-        Anello* used=this->getRing();
+        Tool* used=this->getRing();
         this->setNping(this->getNping()+((tool->getRarity()-(used->getRarity()))*tool->getBonus()));
     }
 
     if(controll==0){
-        Torso* used=this->getTorso();
+        Tool* used=this->getTorso();
         this->setMaxHp(this->getMaxHp()+((tool->getRarity()-(used->getRarity()))*tool->getBonus()));
     }
     if(controll==1){
-        Shoes* used=this->getShoes();
+        Tool* used=this->getShoes();
 
         this->setStaminaBar(this->getStaminaBar()+((tool->getRarity()-(used->getRarity()))*2));
         this->setStamina(this->getStamina()+((tool->getRarity()-(used->getRarity()))*1));
@@ -124,13 +124,14 @@ void Hero::upgrade(Tool* tool) {
 }
 
 void Hero::changeTool(Tool* tool) {
+
     if (tool->getType() == 0) {
         tool->setPosx(1000);
         tool->setPosy(300);
         tool->setPosition(tool->getPosx(),tool->getPosy());
         this->upgrade(tool);
         delete this->torso;
-        this->torso=new Torso(*tool);
+        this->torso=new Tool(*tool);
 
     }
     if (tool->getType() == 1) {
@@ -139,7 +140,7 @@ void Hero::changeTool(Tool* tool) {
         tool->setPosition(tool->getPosx(),tool->getPosy());
         this->upgrade(tool);
         delete this->shoes;
-        this->shoes=new Shoes(*tool);
+        this->shoes=new Tool(*tool);
 
     }
     if (tool->getType() == 2) {
@@ -148,27 +149,21 @@ void Hero::changeTool(Tool* tool) {
         tool->setPosition(tool->getPosx(),tool->getPosy());
         this->upgrade(tool);
         delete this->ring;
-        this->ring=new Anello(*tool);
+        this->ring=new Tool(*tool);
 
 
     }
     if (tool->getType() == 3) {
+
         tool->setPosx(1300);
         tool->setPosy(600);
         tool->setPosition(tool->getPosx(), tool->getPosy());
         this->upgrade(tool);
-        if (this->specialTool->getSpecial() == 0) {
+       auto O= this->specialTool->getSpecial();
+
             delete this->specialTool;
-            this->specialTool = new Wand(*tool);
-        }
-        if (this->specialTool->getSpecial() == 1) {
-            delete this->specialTool;
-            this->specialTool = new Nature(*tool);
-        }
-        if (this->specialTool->getSpecial() == 2) {
-            delete this->specialTool;
-            this->specialTool = new Sword(*tool);
-        }
+            this->specialTool = new SpecialTool(*tool,O);
+
 
     }
 

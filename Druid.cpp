@@ -14,24 +14,48 @@ Druid::Druid() {
     this->setPosition(posx,posy);
     this->setScale(12.5,12.5);
 
-    DruidFlames* flame1t=new DruidFlames(0,500);
-    DruidFlames* flame2t=new DruidFlames(200,300);
-    DruidFlames* flame3t=new DruidFlames(400,500);
+    sf::Sprite* flame1t=new sf::Sprite();
+    flame1t->setPosition(0,500);
+    auto texture1=new sf::Texture;
+    texture1->loadFromFile("./sprite/Varie/druidflames.png");
+    flame1t->setTexture(*texture1);
+    flame1t->setTextureRect(sf::IntRect(0, 0, 32, 32));
+    flame1t->setScale(6.25,6.25);
+
+    sf::Sprite* flame2t=new sf::Sprite();
+    flame2t->setPosition(200,300);
+    flame2t->setTexture(*texture1);
+    flame2t->setTextureRect(sf::IntRect(0, 0, 32, 32));
+    flame2t->setScale(6.25,6.25);
+
+    sf::Sprite* flame3t=new sf::Sprite();
+    flame3t->setPosition(400,500);
+    flame3t->setTexture(*texture1);
+    flame3t->setTextureRect(sf::IntRect(0, 0, 32, 32));
+    flame3t->setScale(6.25,6.25);
+
     Vd.push_back(flame1t);
     Vd.push_back(flame2t);
     Vd.push_back(flame3t);
-    Leaf* leaf=new Leaf();
+    auto leaf=new sf::Sprite();
+    auto texture2=new sf::Texture;
+    texture2->loadFromFile("./sprite/Varie/leaf.png");
+    leaf->setTexture(*texture2);
+    leaf->setTextureRect(sf::IntRect(0, 0, 32, 32));
+    leaf->setScale(12.5,12.5);
+    leaf->setPosition(1400,1080);
+
 
 
     this->leaf=leaf;
-    auto nature1=new Nature;
+    auto nature1=new SpecialTool(1);
     this->specialTool=nature1;
 
     maxHp=10;
     Hp=maxHp;
     stamina=6;
     nping=4;
-    strenght=3;
+    strenght=9993;
     staminaBar=6;
     staminaLeft=staminaBar;
 }
@@ -75,7 +99,7 @@ void Druid::attackAnimation() {
                 if (countAttack == 12) {
                     attackEnded = true;
                     faseAttack = 0;
-                    leaf->setPosition(leaf->getPosx(), leaf->getPosy());
+                    leaf->setPosition(1400, 1080);
 
                 }
 

@@ -9,6 +9,7 @@
 class Tool:public sf::Sprite {
 public:
     Tool();
+    Tool(int N);
     Tool(const Tool& tool);
     virtual ~Tool();
     virtual void chooseRarityFirst();

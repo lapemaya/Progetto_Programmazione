@@ -10,10 +10,10 @@
 
 class SpecialTool:public Tool {
 public:
-    SpecialTool();
+    SpecialTool(int N);
 
     virtual ~SpecialTool();
-    SpecialTool(const Tool& tool);
+    SpecialTool(const Tool& tool,int O);
 
     int getSpecial() const {
         return special;

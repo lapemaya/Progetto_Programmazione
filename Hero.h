@@ -9,13 +9,8 @@
 #include <SFML/Graphics.hpp>
 //#include "ArrayPing.h"
 #include "Tool.h"
-#include "Anello.h"
-#include "Torso.h"
-#include "Shoes.h"
+
 #include "SpecialTool.h"
-#include "Sword.h"
-#include "Wand.h"
-#include "Nature.h"
 
 class Hero:public sf::Sprite {
 
@@ -148,23 +143,23 @@ public:
     void setMaxHp(int maxHp) {
         Hero::maxHp = maxHp;
     }
-    Torso *getTorso() const {
+    Tool *getTorso() const {
         return torso;
     }
-    void setTorso(Torso* torso) {
+    void setTorso(Tool* torso) {
         Hero::torso = torso;
     }
-    Anello* getRing()const{
+    Tool* getRing()const{
         return ring;
     }
-    void setRing(Anello* ring){
+    void setRing(Tool* ring){
         Hero::ring=ring;
     }
-    Shoes *getShoes() const {
+    Tool *getShoes() const {
         return shoes;
     }
 
-    void setShoes(Shoes *shoes) {
+    void setShoes(Tool *shoes) {
         Hero::shoes = shoes;
     }
     SpecialTool *getSpecialTool() const {
@@ -201,9 +196,9 @@ protected:
     bool hasLight=false;
     int money=0;
 
-    Torso* torso;
-    Anello* ring;
-    Shoes* shoes;
+    Tool* torso;
+    Tool* ring;
+    Tool* shoes;
     SpecialTool* specialTool;
 
 

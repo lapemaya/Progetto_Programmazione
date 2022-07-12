@@ -232,6 +232,7 @@ void AttackMenuState::Draw() {
     data->window.draw(*text4);
     data->window.draw(*text5);
     data->window.draw(*text6);
+    data->window.draw(*data->heroptr->getRing());
 
     if(data->heroptr->isHasLight()){
         data->window.draw(*X);

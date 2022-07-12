@@ -7,8 +7,7 @@
 
 
 #include "Hero.h"
-#include "Leaf.h"
-#include "DruidFlames.h"
+
 
 class Druid:public Hero {
 public:
@@ -23,10 +22,10 @@ public:
 
 
 private:
-    std::vector<DruidFlames*> Vd;
+    std::vector<sf::Sprite*> Vd;
 
-    Leaf* leaf;
-    Nature* nature;
+    sf::Sprite* leaf;
+    SpecialTool* nature;
     int transform=0;
 };
 

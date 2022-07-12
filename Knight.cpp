@@ -20,7 +20,7 @@ Knight::Knight() {
 
     swordA=swordA1;
 
-    auto sword1=new Sword;
+    auto sword1=new SpecialTool(2);
     this->specialTool=sword1;
 
     maxHp=30;

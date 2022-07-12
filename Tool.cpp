@@ -7,15 +7,57 @@ Tool::~Tool() {
 
 }
 
-Tool::Tool() {
-    if(rarity==1)
-        this->cost=5;
-    if(rarity==2)
-        cost=10;
-    if(rarity==3)
-        cost=20;
-    if(rarity==4)
-        cost=40;
+Tool::Tool(int N) {
+
+
+    if(N==0){
+        auto texture=new sf::Texture;
+        texture->loadFromFile("./sprite/Tools/torso.png");
+        this->setTexture(*texture);
+        this->setTextureRect(sf::IntRect(0, 0, 32, 32));
+        this->setPosx(1000);
+        this->setPosy(300);
+        this->setPosition(posx,posy);
+        this->setScale(6.25,6.25);
+        bonus=15;
+        this->type=0;
+        this->rarity=0;
+        auto description1=new std::string ;
+        *description1="Hp UP";
+        description=description1;
+    }
+    if(N==1){
+        auto texture=new sf::Texture;
+        texture->loadFromFile("./sprite/Tools/scarpa.png");
+        this->setTexture(*texture);
+        this->setTextureRect(sf::IntRect(0, 0, 32, 32));
+        this->setPosx(1300);
+        this->setPosy(300);
+        this->setPosition(posx,posy);
+        this->setScale(6.25,6.25);
+        this->type=1;
+        this->rarity=0;
+        bonus=1;
+        auto description1=new std::string ;
+        *description1="Stamina UP";
+        description=description1;
+    }
+    if(N==2){
+        auto texture=new sf::Texture;
+        texture->loadFromFile("./sprite/Tools/anello.png");
+        this->setTexture(*texture);
+        this->setTextureRect(sf::IntRect(0, 0, 32, 32));
+        this->setPosx(1000);
+        this->setPosy(600);
+        this->setPosition(posx,posy);
+        this->setScale(6.25,6.25);
+        this->setBonus(1);
+        this->type=2;
+        this->rarity=0;
+        auto description1=new std::string ;
+        *description1="Ping UP";
+        description=description1;
+    }
 }
 
 void Tool::chooseRarityFirst() {
@@ -36,12 +78,39 @@ void Tool::chooseRarityFirst() {
 }
 
 Tool::Tool(const Tool &tool) {
-    bonus=tool.getBonus();
+
+    auto texture=new sf::Texture;
+
     this->rarity=tool.rarity;
     this->posx=tool.posx;
     this->posy=tool.posy;
     this->bonus=tool.bonus;
     this->type=tool.type;
+    if(type==0){
+        texture->loadFromFile("./sprite/Tools/torso.png");
+        this->setTexture(*texture);
+        this->setTextureRect(sf::IntRect(rarity*32, 0, 32, 32));
+        this->setPosx(1000);
+        this->setPosy(300);
+        this->setPosition(posx,posy);
+    }
+    if(type==1){
+        texture->loadFromFile("./sprite/Tools/scarpa.png");
+        this->setTexture(*texture);
+        this->setTextureRect(sf::IntRect(rarity*32, 0, 32, 32));
+        this->setPosx(1300);
+        this->setPosy(300);
+        this->setPosition(posx,posy);
+    }
+    if(type==2){
+        texture->loadFromFile("./sprite/Tools/anello.png");
+        this->setTexture(*texture);
+        this->setTextureRect(sf::IntRect(rarity*32, 0, 32, 32));
+        this->setPosx(1000);
+        this->setPosy(600);
+        this->setPosition(posx,posy);
+    }
+    this->setScale(6.25,6.25);
 }
 
 void Tool::chooseRaritySecond() {
@@ -60,3 +129,8 @@ void Tool::chooseRaritySecond() {
         this->rarity=1;
         this->cost=5;}
 }
+
+Tool::Tool() {
+
+}
+

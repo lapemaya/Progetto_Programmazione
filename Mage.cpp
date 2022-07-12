@@ -15,7 +15,7 @@ Mage::Mage() {
     auto fireptr=new Fireball();
 
     this->setFireptr(fireptr);
-    auto wand1=new Wand;
+    auto wand1=new SpecialTool(0);
     this->specialTool=wand1;
 
     maxHp=20;
