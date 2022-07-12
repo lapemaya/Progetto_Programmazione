@@ -86,8 +86,8 @@ void ClassMenuState::Update() {
 }
 
 void ClassMenuState::Init() {
-    delete data->menu;
-    data->menu=new ClassMenu();
+
+    data->menu->setTextureRect(sf::IntRect(1920,0,1920,1080));
 
 
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));

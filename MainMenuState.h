@@ -6,7 +6,7 @@
 #define GIOCO2_MAINMENUSTATE_H
 
 #include "State.h"
-#include "MainMenu.h"
+
 #include "Game.h"
 #include "ClassMenuState.h"
 

@@ -28,8 +28,7 @@ void ShopState::Init() {
         data->Vtool=data->toolInterface.orderTool(data->heroptr,data->Vtool,"Shop");
         data->first=false;
     }
-    delete data->menu;
-    data->menu=new ShopMenu;
+    data->menu->setTextureRect(sf::IntRect(1920,1080,1920,1080));
 
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
 

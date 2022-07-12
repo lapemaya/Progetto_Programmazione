@@ -7,17 +7,17 @@
 #include"iostream"
     Game::Game() {
 
-        data->window.create(sf::VideoMode::getDesktopMode(), "da Game"//,sf::Style::Fullscreen
+        data->window.create(sf::VideoMode::getDesktopMode(), "da Game",sf::Style::Fullscreen
         );
         data->lenght=data->window.getSize().x;
         data->width=data->window.getSize().y;
 
-        data->music1.setVolume(50);
+        data->music1.setVolume(10);
         data->music1.setLoop(true);
         data->music1.openFromFile("./music/elevator.wav");
         data->music1.play();
 
-        data->music2.setVolume(100);
+        data->music2.setVolume(10);
         data->music2.setLoop(false);
         data->music2.openFromFile("./music/oof.wav");
 
@@ -26,7 +26,7 @@
         data->music3.setLoop(false);
         data->music3.openFromFile("./music/ding.wav");
 
-        data->music4.setVolume(100);
+        data->music4.setVolume(10);
         data->music4.setLoop(false);
         data->music4.openFromFile("./music/ping.wav");
 
@@ -38,6 +38,7 @@
         data->font.loadFromFile("font.ttf");
 
         this->Run();
+
     }
 
     void Game::Run() {

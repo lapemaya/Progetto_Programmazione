@@ -6,7 +6,7 @@
 #define GIOCO2_PINGSTATE_H
 #include "State.h"
 #include "Game.h"
-#include "NullMenu.h"
+
 #include "HeroAttackState.h"
 
 class PingState:public State {

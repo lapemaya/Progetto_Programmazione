@@ -6,7 +6,7 @@
 #define GIOCO2_HEROCHECKSTATE_H
 #include "State.h"
 #include "Game.h"
-#include "HeroCheckMenu.h"
+
 
 class HeroCheckState:public State {
 public:

@@ -103,8 +103,7 @@ void StatState::Update() {
 }
 
 void StatState::Init() {
-    delete data->menu;
-    data->menu=new StatMenu;
+    data->menu->setTextureRect(sf::IntRect(1920*3,1080,1920,1080));
 
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
 }

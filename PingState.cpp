@@ -92,11 +92,10 @@ void PingState::Update() {
 }
 
 void PingState::Init() {
-    delete data->menu;
-    data->menu=new NullMenu();
+    data->menu->setTextureRect(sf::IntRect(1920*3,0,1920,1080));
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
     this->creationPing(data->heroptr->getNping(),data->V);
-    time1=sf::seconds(3+(data->heroptr->getNping()/7)+0.25*(data->heroptr->getStaminaBar()-6));
+    time1=sf::seconds(3+data->heroptr->getStamina()*0.5);
     clock1.restart();
 
 

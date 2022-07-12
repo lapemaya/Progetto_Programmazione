@@ -6,7 +6,7 @@
 #define GIOCO2_DEDSTATE_H
 #include "State.h"
 #include "Game.h"
-#include "DedMenu.h"
+
 class DedState:public State {
 public:
     DedState(GameDataRef data);

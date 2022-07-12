@@ -6,7 +6,7 @@
 #define GIOCO2_LOOTSTATE_H
 #include "State.h"
 #include "Game.h"
-#include "LootMenu.h"
+
 #include "ShopState.h"
 #include "HeroCheckState.h"
 #include "ToolInterface.h"

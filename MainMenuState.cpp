@@ -82,7 +82,8 @@ void MainMenuState::Draw() {
 }
 
 MainMenuState::MainMenuState(GameDataRef data) {
-    data->menu=new MainMenu();
+    data->menu=new Menu;
+    data->menu->setTextureRect(sf::IntRect(0,0,1920,1080));
     this->data=data;
 
 

@@ -3,6 +3,7 @@
 //
 
 #include "HeroCheckState.h"
+#include "LootState.h"
 
 HeroCheckState::HeroCheckState(GameDataRef data) {
 this->data=data;
@@ -17,8 +18,7 @@ void HeroCheckState::Update() {
 }
 
 void HeroCheckState::Init() {
-delete data->menu;
-data->menu=new HeroCheckMenu;
+    data->menu->setTextureRect(sf::IntRect(1920*2,1080,1920,1080));
 
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
 

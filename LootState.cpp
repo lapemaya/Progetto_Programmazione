@@ -27,8 +27,7 @@ void LootState::Init() {
         data->Vtool=data->toolInterface.orderTool(data->heroptr,data->Vtool,"Loot");
         data->first=false;
     }
-delete data->menu;
-data->menu=new LootMenu;
+    data->menu->setTextureRect(sf::IntRect(0,1080,1920,1080));
 
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
 

@@ -18,7 +18,7 @@ public:
     void attackAnimation() override;
     void drawHero(sf::RenderWindow &finestra)override;
     void resetBonus()override;
-    virtual int Attack()override;
+     int Attack()override;
 
 
 

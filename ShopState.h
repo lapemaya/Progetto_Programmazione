@@ -6,7 +6,7 @@
 #define GIOCO2_SHOPSTATE_H
 #include "State.h"
 #include "Game.h"
-#include "ShopMenu.h"
+
 #include "StatState.h"
 
 class ShopState:public State {

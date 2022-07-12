@@ -3,6 +3,7 @@
 //
 
 #include "DedState.h"
+#include "ClassMenuState.h"
 
 DedState::DedState(GameDataRef data) {
     this->data=data;
@@ -17,8 +18,7 @@ void DedState::Update() {
 }
 
 void DedState::Init() {
-    delete data->menu;
-    data->menu=new DedMenu();
+    data->menu->setTextureRect(sf::IntRect(0,1080*2,1920,1080));
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
 
     std::stringstream ciao1;

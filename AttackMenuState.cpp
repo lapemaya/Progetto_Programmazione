@@ -11,8 +11,8 @@ AttackMenuState::AttackMenuState(GameDataRef data) {
 }
 
 void AttackMenuState::Init() {
-    delete data->menu;
-    data->menu=new AttackMenu();
+
+    data->menu->setTextureRect(sf::IntRect(1920*2,0,1920,1080));
     data->menu->setScale(((1 * data->lenght) / 1920), ((1 * data->width) / 1080));
 
     X=new sf::Sprite;

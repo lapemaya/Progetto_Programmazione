@@ -3,6 +3,7 @@
 //
 
 #include "EnemyAttackState.h"
+#include "AttackMenuState.h"
 
 EnemyAttackState::EnemyAttackState(GameDataRef data) {
     this->data=data;
@@ -88,8 +89,8 @@ void EnemyAttackState::Update() {
     }
 }
 void EnemyAttackState::Init() {
-    delete data->menu;
-    data->menu=new NullMenu;
+
+    data->menu->setTextureRect(sf::IntRect(1920*3,0,1920,1080));
     damage=data->enemyptr->attack();
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
 }

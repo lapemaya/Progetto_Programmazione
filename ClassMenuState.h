@@ -6,7 +6,7 @@
 #define GIOCO2_CLASSMENUSTATE_H
 #include "State.h"
 #include "Game.h"
-#include "ClassMenu.h"
+
 #include "Knight.h"
 #include "Mage.h"
 #include "Druid.h"
