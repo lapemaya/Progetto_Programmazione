@@ -7,13 +7,9 @@
 
 HowState::HowState(GameDataRef data) {
 this->data=data;
-
 }
-
 HowState::~HowState() {
-
 }
-
 void HowState::Update() {
 if(data->bye>=6){
     this->data->machine.setNewState(StateRef(new MainMenuState(data)));
@@ -21,21 +17,17 @@ if(data->bye>=6){
     data->bye=0;
 }
 }
-
 void HowState::Init() {
 delete data->menu;
 data->menu=new HowMenu;
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
-
 }
-
 void HowState::HandleInput() {
     sf::Event event;
     sf::Vector2i globalPosition = sf::Mouse::getPosition();
     while (this->data->window.pollEvent(event))
         if (sf::Event::Closed == event.type) {
             this->data->window.close();
-
         }
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
@@ -62,7 +54,6 @@ void HowState::HandleInput() {
         }
         }
 }
-
 void HowState::Draw() {
 data->window.draw(*data->menu);
 }

@@ -10,18 +10,13 @@
 #include "AttackMenuState.h"
 
 class StatState:public State {
-
 public:
     StatState(GameDataRef data);
-
-
     virtual ~StatState();
 
     void Update() override;
     void Init() override;
-
     void HandleInput()override;
-
     void Draw() override;
 private:
     GameDataRef data;
@@ -32,6 +27,4 @@ private:
     sf::Text* text5;
     sf::Text* text6;
 };
-
-
 #endif //GIOCO2_STATSTATE_H

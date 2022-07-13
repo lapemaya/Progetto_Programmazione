@@ -9,17 +9,13 @@
 #include "Enemy.h"
 
 class Goblin: public Enemy{
-
 public:
-
     Goblin(int N);
     virtual ~Goblin();
 
-    virtual void attackAnimation()override;
-    virtual void drawMe(sf::RenderWindow &finestra) override;
+    virtual void AttackAnimation()override;
+    virtual void Draw(sf::RenderWindow &finestra) override;
 protected:
     sf::Sprite* sprite;
 };
-
-
 #endif //GIOCO2_GOBLIN_H

@@ -13,103 +13,86 @@ public:
 
     Enemy();
     virtual ~Enemy();
-    virtual bool isDead();
-    virtual int attack();
-    virtual void regen();
-    virtual void attackAnimation();
-    virtual void takeDamage(int damage);
-    virtual bool canAttack();
-    virtual void drawMe(sf::RenderWindow &finestra);
+    virtual bool IsDead()const;
+    virtual int Attack();
+    virtual void Regen();
+    virtual void AttackAnimation();
+    virtual void TakeDamage(int damage);
+    virtual bool CanAttack()const;
+    virtual void Draw(sf::RenderWindow &finestra);
 
     int getHp() const {
         return Hp;
     }
-
     void setHp(int hp) {
         Hp = hp;
     }
-
     int getStamina() const {
-        return stamina;
+        return Stamina;
     }
-
     void setStamina(int stamina) {
         stamina = stamina;
     }
-
     int getStrenght() const {
-        return strenght;
+        return Strenght;
     }
-
-    void setStrenght(int strenght) {
-        Enemy::strenght = strenght;
+    void setStrenght(int Strenght) {
+        Enemy::Strenght = Strenght;
     }
     int getStaminaBar() const {
-        return staminaBar;
+        return StaminaBar;
     }
-
-    void setStaminaBar(int staminaBar) {
-        Enemy::staminaBar = staminaBar;
+    void setStaminaBar(int StaminaBar) {
+        Enemy::StaminaBar = StaminaBar;
     }
-
     int getPosx() const {
-        return posx;
+        return Posx;
     }
-
-    void setPosx(int posx) {
-        Enemy::posx = posx;
+    void setPosx(int Posx) {
+        Enemy::Posx = Posx;
     }
-
     int getPosy() const {
-        return posy;
+        return Posy;
     }
-
-    void setPosy(int posy) {
-        Enemy::posy = posy;
+    void setPosy(int Posy) {
+        Enemy::Posy = Posy;
     }
-
     int getFaseAttack() const {
-        return faseAttack;
+        return FaseAttack;
     }
-
-    void setFaseAttack(int faseAttack) {
-        Enemy::faseAttack = faseAttack;
+    void setFaseAttack(int FaseAttack) {
+        Enemy::FaseAttack = FaseAttack;
     }
-
     int getStaminaLeft() const {
-        return staminaLeft;
+        return StaminaLeft;
     }
-
-    void setStaminaLeft(int staminaLeft) {
-        Enemy::staminaLeft = staminaLeft;
+    void setStaminaLeft(int StaminaLeft) {
+        Enemy::StaminaLeft = StaminaLeft;
     }
-
     bool isAttackEnded() const {
         return AttackEnded;
     }
-
     void setAttackEnded(bool isAttackEnded) {
         Enemy::AttackEnded = isAttackEnded;
     }
     int getCountAttack() const {
         return CountAttack;
     }
-
     void setCountAttack(int CountAttack) {
         Enemy::CountAttack = CountAttack;
     }
 protected:
     int Hp=10;
-    int stamina=1;
-    int staminaBar=1;
-    int staminaLeft;
-    int strenght=1;
-    int posx=1400;
-    int posy=500;
-    int faseAttack=0;
+    int Stamina=1;
+    int StaminaBar=1;
+    int StaminaLeft;
+    int Strenght=1;
+    int Posx=1400;
+    int Posy=500;
+    int FaseAttack=0;
     int CountAttack=0;
     bool AttackEnded=false;
-    int level;
+    int Level;
 
 
 };

@@ -11,34 +11,22 @@
     class Mage:public Hero {
     public:
         Mage();
-
-        virtual int Attack()override;
-        void attackAnimation()override;
-        void drawHero(sf::RenderWindow &finestra) override;
-        void resetBonus()override;
-
         virtual ~Mage();
 
-
-
+        virtual int Attack()override;
+        void AttackAnimation()override;
+        void Draw(sf::RenderWindow &finestra) override;
+        void ResetBonus()override;
         Fireball *getFireptr() const {
             return fireptr;
         }
-
         void setFireptr(Fireball *fireptr) {
             Mage::fireptr = fireptr;
         }
-
-
-
-
     protected:
-
         Fireball* fireptr;
         int countPing=0;
         int aura=0;
-
-
 };
 
 

@@ -5,7 +5,6 @@
 #ifndef GIOCO2_PING_H
 #define GIOCO2_PING_H
 
-
 #include "SFML/Graphics.hpp"
 
 class Ping:public sf::Sprite {
@@ -13,34 +12,21 @@ public:
     Ping(int posx,int posy);
     Ping();
 
-    //virtual ~Ping();
-
-    void drawMe(sf::RenderWindow &finestra);
-
-
+    void Draw(sf::RenderWindow &finestra);
     int getPosx() const {
-        return posx;
+        return Posx;
     }
-
-    void setPosx(int posx) {
-        Ping::posx = posx;
+    void setPosx(int Posx) {
+        Ping::Posx = Posx;
     }
-
     int getPosy() const {
-        return posy;
+        return Posy;
     }
-
-    void setPosy(int posy) {
-        Ping::posy = posy;
+    void setPosy(int Posy) {
+        Ping::Posy = Posy;
     }
-
 private:
-    int posx=0;
-    int posy=0;
-
-
-
+    int Posx=0;
+    int Posy=0;
 };
-
-
 #endif //GIOCO2_PING_H

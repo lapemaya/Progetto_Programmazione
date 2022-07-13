@@ -9,16 +9,10 @@
 
 class Rat: public Enemy {
 public:
-
     Rat(int N);
     virtual ~Rat();
 
-    virtual void attackAnimation()override;
-
-
-
-
-
+    virtual void AttackAnimation()override;
 };
 
 

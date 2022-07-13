@@ -8,21 +8,14 @@ Ping::Ping(int posx,int posy){
     auto texture=new sf::Texture;
     texture->loadFromFile("./sprite/Varie/ping.png");
     this->setTexture(*texture);
-
 }
-
 Ping::Ping(){
-    posx=0;
-    posy=0;
+    Posx=0;
+    Posy=0;
     auto texture=new sf::Texture;
     texture->loadFromFile("./sprite/Varie/ping.png");
     this->setTexture(*texture);
-
 }
-
-
-
-void Ping::drawMe(sf::RenderWindow &finestra) {
+void Ping::Draw(sf::RenderWindow &finestra) {
     finestra.draw(*this);
-
 }

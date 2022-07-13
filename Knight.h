@@ -5,7 +5,6 @@
 #ifndef GIOCO2_KNIGHT_H
 #define GIOCO2_KNIGHT_H
 
-
 #include "Hero.h"
 
 class Knight:public Hero {
@@ -13,11 +12,11 @@ public:
     Knight();
     virtual ~Knight();
     int Attack()override;
-    void attackAnimation() override;
-    virtual void drawHero(sf::RenderWindow &finestra)override;
-    void resetBonus()override;
+    void AttackAnimation() override;
+    virtual void Draw(sf::RenderWindow &finestra)override;
+    void ResetBonus()override;
 protected:
-    bool crit=false;
+    bool Crit=false;
     sf::Sprite* swordA;
 };
 

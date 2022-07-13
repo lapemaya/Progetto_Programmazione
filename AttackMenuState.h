@@ -7,26 +7,21 @@
 
 #include "State.h"
 #include "Game.h"
-
 #include "Goblin.h"
 #include "Dragon.h"
 #include "Rat.h"
 #include "PingState.h"
+
 class AttackMenuState:public State {
 public:
     AttackMenuState(GameDataRef data);
-
-
     virtual ~AttackMenuState();
 
     void Update() override;
     void Init() override;
-
     void HandleInput()override;
-
     void Draw() override;
-    void creationEnemy();
-
+    void CreationEnemy();
 private:
     GameDataRef data;
     sf::Text* text1;
@@ -36,7 +31,6 @@ private:
     sf::Text* text5;
     sf::Text* text6;
     sf::Sprite* X;
-
 };
 
 

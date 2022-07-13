@@ -10,28 +10,27 @@ Tool *ToolFactory::createTool(Hero *heroptr,std::string type) {
     if(type.compare("Loot")) {
         if(N!=3) {
             tool = new Tool(N);
-            tool->chooseRarityFirst();
+            tool->ChooseRarityFirst();
             return tool;
         }
         if (N == 3) {
             int M=heroptr->getSpecialTool()->getSpecial();
             tool = new SpecialTool(M);
-            tool->chooseRarityFirst();
+            tool->ChooseRarityFirst();
             return tool;
         }
     }
     if(type.compare("Shop")) {
         if(N!=3) {
             tool = new Tool(N);
-            tool->chooseRaritySecond();
+            tool->ChooseRaritySecond();
             return tool;
         }
         if (N == 3) {
             int M=heroptr->getSpecialTool()->getSpecial();
             tool = new SpecialTool(M);
-            tool->chooseRaritySecond();
+            tool->ChooseRaritySecond();
             return tool;
         }
     }
-
 }

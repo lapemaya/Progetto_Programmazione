@@ -4,28 +4,23 @@
 
 #ifndef GIOCO2_PINGSTATE_H
 #define GIOCO2_PINGSTATE_H
+
 #include "State.h"
 #include "Game.h"
-
 #include "HeroAttackState.h"
-
 class PingState:public State {
 public:
     PingState(GameDataRef data);
-
-
     virtual ~PingState();
 
     void Update() override;
     void Init() override;
-
     void HandleInput()override;
-
     void Draw() override;
 
-    void creationPing(int N,std::vector<Ping*> &V);
-    void drawPings(std::vector<Ping*> &V);
-    void clickPing();
+    void CreationPing(int N,std::vector<Ping*> &V);
+    void DrawPings(std::vector<Ping*> &V);
+    void ClickPing();
 private:
     GameDataRef data;
     sf::Time time1;
@@ -33,11 +28,8 @@ private:
     sf::Text* text1;
     sf::Text* text2;
     sf::Text* text3;
-    bool end=false;
-    bool hit=false;
-    int quale=0;
-
+    bool End=false;
+    bool Hit=false;
+    int Quale=0;
 };
-
-
 #endif //GIOCO2_PINGSTATE_H

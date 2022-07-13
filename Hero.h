@@ -13,135 +13,126 @@
 #include "SpecialTool.h"
 
 class Hero:public sf::Sprite {
-
 public:
-
     Hero();
-
     virtual ~Hero();
 
-    virtual bool isDead();
-    virtual void takeDamage(int damage);
-    virtual bool canAttack();
+    virtual bool IsDead();
+    virtual void TakeDamage(int damage);
+    virtual bool CanAttack();
     virtual int Attack();
-    virtual int attackLight();
-    virtual int attackNormal();
-    virtual int attackStrong();
-    virtual void regen();
-    virtual void attackAnimation();
-    virtual void drawHero(sf::RenderWindow &finestra);
-    virtual void resetBonus()=0;
-
-    void upgrade(Tool* tool);
-    void changeTool(Tool* tool);
-    void upgradeStat(int quale);
-
+    virtual int AttackLight();
+    virtual int AttackNormal();
+    virtual int AttackStrong();
+    virtual void Regen();
+    virtual void AttackAnimation();
+    virtual void Draw(sf::RenderWindow &finestra);
+    virtual void ResetBonus()=0;
+    void Upgrade(Tool* tool);
+    void ChangeTool(Tool* tool);
+    void UpgradeStat(int quale);
 
     int getStaminaLeft() const {
-        return staminaLeft;
+        return StaminaLeft;
     }
-
-    void setStaminaLeft(int staminaLeft) {
-        Hero::staminaLeft = staminaLeft;
+    void setStaminaLeft(int StaminaLeft) {
+        Hero::StaminaLeft = StaminaLeft;
     }
     int getHp() const {
         return Hp;
     }
-
-
-
     void setHp(int hp) {
         Hp = hp;
     }
     int getStamina() const {
-        return stamina;
+        return Stamina;
     }
-    void setStamina(int stamina) {
-        Hero::stamina = stamina;
+    void setStamina(int Stamina) {
+        Hero::Stamina = Stamina;
     }
     int getNping() const {
-        return nping;
+        return Nping;
     }
-    void setNping(int nping) {
-        Hero::nping = nping;
+    void setNping(int Nping) {
+        Hero::Nping = Nping;
     }
     int getStrenght() const {
-        return strenght;
+        return Strenght;
     }
-    void setStrenght(int strenght) {
-        Hero::strenght = strenght;
+    void setStrenght(int Strenght) {
+        Hero::Strenght = Strenght;
     }
     int getPosx() const {
-        return posx;
+        return Posx;
     }
     void setPosx(int posx) {
-        Hero::posx = posx;
+        Hero::Posx = Posx;
     }
     int getPosy() const {
-        return posy;
+        return Posy;
     }
     void setPosy(int posy) {
-        Hero::posy = posy;
+        Hero::Posy = Posy;
     }
     int getAttack() const {
-        return attack;
+        return Attack1;
     }
-    void setAttack(int attack) {
-        Hero::attack = attack;
+    void setAttack(int Attack1) {
+        Hero::Attack1 = Attack1;
     }
     bool isisAttacking() const {
-        return isAttacking;
+        return IsAttacking;
     }
-    void setIsAttacking(bool isAttacking) {
-        Hero::isAttacking = isAttacking;
+    void setIsAttacking(bool IsAttacking) {
+        Hero::IsAttacking = IsAttacking;
     }
     int getStaminaBar() const {
-        return staminaBar;
+        return StaminaBar;
     }
-    void setStaminaBar(int staminaBar) {
-        Hero::staminaBar = staminaBar;
+    void setStaminaBar(int StaminaBar) {
+        Hero::StaminaBar = StaminaBar;
     }
     bool isDonePing() const {
-        return donePing;
+        return DonePing;
     }
-    void setDonePing(bool donePing) {
-        Hero::donePing = donePing;
+    void setDonePing(bool DonePing) {
+        Hero::DonePing = DonePing;
     }
     bool isAttackEnded() const {
-        return attackEnded;
+        return AttackEnded;
     }
-    void setAttackEnded(bool attackEnded) {
-        Hero::attackEnded = attackEnded;
+    void setAttackEnded(bool AttackEnded) {
+        Hero::AttackEnded = AttackEnded;
     }
     int getFaseAttack() const {
-        return faseAttack;
+        return FaseAttack;
     }
-    void setFaseAttack(int faseAttack) {
-        Hero::faseAttack = faseAttack;
+    void setFaseAttack(int FaseAttack) {
+        Hero::FaseAttack = FaseAttack;
     }
     int getCountAttack() const {
-        return countAttack;
+        return CountAttack;
     }
-    void setCountAttack(int countAttack) {
-        Hero::countAttack = countAttack;
+    void setCountAttack(int CountAttack) {
+        Hero::CountAttack = CountAttack;
     }
     int getPingHit() const {
-        return pingHit;
+        return PingHit;
     }
-    void setPingHit(int pingHit) {
-        Hero::pingHit = pingHit;
+    void setPingHit(int PingHit) {
+        Hero::PingHit = PingHit;
     }
-    void setHasLight(bool hasLight){
-        Hero::hasLight=hasLight;
+    void setHasLight(bool HasLight){
+        Hero::HasLight=HasLight;
     }
     bool isHasLight() const {
-        return hasLight;
+        return HasLight;
     }
     int getMaxHp() const {
-        return maxHp;
+        return MaxHp;
     }
-    void setMaxHp(int maxHp) {
-        Hero::maxHp = maxHp;
+    void setMaxHp(int MaxHp) {
+        Hero::MaxHp = MaxHp;
     }
     Tool *getTorso() const {
         return torso;
@@ -158,51 +149,45 @@ public:
     Tool *getShoes() const {
         return shoes;
     }
-
     void setShoes(Tool *shoes) {
         Hero::shoes = shoes;
     }
     SpecialTool *getSpecialTool() const {
         return specialTool;
     }
-
     void setSpecialTool(SpecialTool *specialTool) {
         Hero::specialTool = specialTool;
     }
     int getMoney() const {
-        return money;
+        return Money;
     }
-
-    void setMoney(int money) {
-        Hero::money = money;
+    void setMoney(int Money) {
+        Hero::Money = Money;
     }
 protected:
-    int attack;
+    int Attack1;
     int Hp;
-    int maxHp;
-    int stamina;
-    int staminaBar;
-    int staminaLeft;
-    int nping;
-    int pingHit;
-    int strenght;
-    int posx=100;
-    int posy=500;
-    bool isAttacking;
-    int faseAttack=0;
-    int countAttack=0;
-    bool donePing=false;
-    bool attackEnded=false;
-    bool hasLight=false;
-    int money=0;
+    int MaxHp;
+    int Stamina;
+    int StaminaBar;
+    int StaminaLeft;
+    int Nping;
+    int PingHit;
+    int Strenght;
+    int Posx=100;
+    int Posy=500;
+    bool IsAttacking;
+    int FaseAttack=0;
+    int CountAttack=0;
+    bool DonePing=false;
+    bool AttackEnded=false;
+    bool HasLight=false;
+    int Money=0;
 
     Tool* torso;
     Tool* ring;
     Tool* shoes;
     SpecialTool* specialTool;
-
-
-
 };
 
 

@@ -12,64 +12,58 @@ public:
     Tool(int N);
     Tool(const Tool& tool);
     virtual ~Tool();
-    virtual void chooseRarityFirst();
-    virtual  void chooseRaritySecond();
-
+    virtual void ChooseRarityFirst();
+    virtual  void ChooseRaritySecond();
 
     int getRarity() const {
-        return rarity;
+        return Rarity;
     }
-    void setRarity(int rarity) {
-        Tool::rarity = rarity;
+    void setRarity(int Rarity) {
+        Tool::Rarity = Rarity;
     }
     int getPosx() const {
-        return posx;
+        return Posx;
     }
-    void setPosx(int posx) {
-        Tool::posx = posx;
+    void setPosx(int Posx) {
+        Tool::Posx = Posx;
     }
     int getPosy() const {
-        return posy;
+        return Posy;
     }
-    void setPosy(int posy) {
-        Tool::posy = posy;
+    void setPosy(int Posy) {
+        Tool::Posy = Posy;
     }
     int getBonus() const {
-        return bonus;
+        return Bonus;
     }
-    void setBonus(int bonus) {
-        Tool::bonus = bonus;
+    void setBonus(int Bonus) {
+        Tool::Bonus = Bonus;
     }
     int getType() const {
-        return type;
+        return Type;
     }
-
-    void setType(int type) {
-        Tool::type = type;
+    void setType(int Type) {
+        Tool::Type = Type;
     }
     int getCost() const {
-        return cost;
+        return Cost;
     }
-
-    void setCost(int cost) {
-        Tool::cost = cost;
+    void setCost(int Cost) {
+        Tool::Cost = Cost;
     }
-
     std::string *getDescription() const {
         return description;
     }
-
     void setDescription(std::string *description) {
         Tool::description = description;
     }
-
 protected:
-    int rarity=0;
-    int posx=0;
-    int posy=0;
-    int bonus=0;
-    int type=0;
-    int cost=0;
+    int Rarity=0;
+    int Posx=0;
+    int Posy=0;
+    int Bonus=0;
+    int Type=0;
+    int Cost=0;
     std::string* description;
 };
 

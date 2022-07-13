@@ -4,10 +4,9 @@
 
 #include "SpecialTool.h"
 
-
 SpecialTool::SpecialTool(int N) {
-    bonus=2;
-    type=3;
+    Bonus=2;
+    Type=3;
     auto description1=new std::string ;
     *description1="Strenght UP";
     description=description1;
@@ -18,9 +17,9 @@ SpecialTool::SpecialTool(int N) {
         this->setTextureRect(sf::IntRect(0, 0, 32, 32));
         this->setPosx(1300);
         this->setPosy(600);
-        this->setPosition(posx, posy);
+        this->setPosition(Posx, Posy);
         this->setScale(6.25, 6.25);
-        special = 2;
+        this->Special = 2;
     }
     if(N==0){
         auto texture=new sf::Texture;
@@ -29,9 +28,9 @@ SpecialTool::SpecialTool(int N) {
         this->setTextureRect(sf::IntRect(0, 0, 32, 32));
         this->setPosx(1300);
         this->setPosy(600);
-        this->setPosition(posx,posy);
+        this->setPosition(Posx,Posy);
         this->setScale(6.25,6.25);
-        special=0;
+        this->Special=0;
     }
     if(N==1){
         auto texture=new sf::Texture;
@@ -40,55 +39,49 @@ SpecialTool::SpecialTool(int N) {
         this->setTextureRect(sf::IntRect(0, 0, 32, 32));
         this->setPosx(1300);
         this->setPosy(600);
-        this->setPosition(posx,posy);
+        this->setPosition(Posx,Posy);
         this->setScale(6.25,6.25);
-
-        special=1;
+        this->Special=1;
     }
-
 }
-
 SpecialTool::SpecialTool(const Tool &tool,int O) {
-    this->rarity=tool.getRarity();
-    this->posx=tool.getPosx();
-    this->posy=tool.getPosy();
-    this->bonus=tool.getBonus();
-    this->type=tool.getType();
-    bonus=tool.getBonus();
+    this->Rarity=tool.getRarity();
+    this->Posx=tool.getPosx();
+    this->Posy=tool.getPosy();
+    this->Bonus=tool.getBonus();
+    this->Type=tool.getType();
+    Bonus=tool.getBonus();
     this->setScale(6.25,6.25);
-    type=3;
+    Type=3;
     if(O==0){
         auto texture=new sf::Texture;
         texture->loadFromFile("./sprite/Tools/wand.png");
         this->setTexture(*texture);
-        this->setTextureRect(sf::IntRect(rarity*32, 0, 32, 32));
+        this->setTextureRect(sf::IntRect(Rarity*32, 0, 32, 32));
         this->setPosx(1300);
         this->setPosy(600);
-        this->setPosition(posx,posy);
+        this->setPosition(Posx,Posy);
+        Special=O;
     }
     if(O==1){
         auto texture=new sf::Texture;
         texture->loadFromFile("./sprite/Tools/nature.png");
         this->setTexture(*texture);
-        this->setTextureRect(sf::IntRect(rarity*32, 0, 32, 32));
+        this->setTextureRect(sf::IntRect(Rarity*32, 0, 32, 32));
         this->setPosx(1300);
         this->setPosy(600);
-        this->setPosition(posx,posy);
-
+        this->setPosition(Posx,Posy);
+        Special=O;
     }
     if(O==2){
         auto texture = new sf::Texture;
         texture->loadFromFile("./sprite/Tools/sword.png");
         this->setTexture(*texture);
-        this->setTextureRect(sf::IntRect(rarity*32, 0, 32, 32));
+        this->setTextureRect(sf::IntRect(Rarity*32, 0, 32, 32));
         this->setPosx(1300);
         this->setPosy(600);
-        this->setPosition(posx, posy);
+        this->setPosition(Posx, Posy);
+        Special=O;
     }
-
-
 }
-
-SpecialTool::~SpecialTool() {
-
-}
+SpecialTool::~SpecialTool() {}

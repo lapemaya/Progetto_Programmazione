@@ -3,31 +3,23 @@
 //
 
 #include "Enemy.h"
-#include "Enemy.h"
+
 
 Enemy::Enemy() {
-
-    staminaLeft=staminaBar;
 }
-
-
 Enemy::~Enemy() {
-
 }
-
-bool Enemy::isDead() {
+bool Enemy::IsDead() const{
     if(this->getHp()<=0)
         return true;
     else{
         return false;
     }
 }
-
-void Enemy::regen() {
+void Enemy::Regen() {
     this->setStaminaBar(this->getStaminaBar()+this->getStamina());
 }
-
-bool Enemy::canAttack() {
+bool Enemy::CanAttack()const {
     if(this->getStaminaLeft()>0){
         return true;
     }
@@ -35,21 +27,14 @@ bool Enemy::canAttack() {
         return false;
     }
 }
-
-void Enemy::takeDamage(int damage) {
+void Enemy::TakeDamage(int damage) {
     this->setHp(this->getHp()-damage);
 }
-
-int Enemy::attack() {
+int Enemy::Attack() {
     int damage=this->getStrenght()+rand()%6;
     return damage;
 }
-
-void Enemy::attackAnimation() {
-
-}
-
-void Enemy::drawMe(sf::RenderWindow &finestra) {
-
+void Enemy::AttackAnimation() {}
+void Enemy::Draw(sf::RenderWindow &finestra) {
     finestra.draw(*this);
 }

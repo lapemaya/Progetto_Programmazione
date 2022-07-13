@@ -14,60 +14,48 @@ EnemyAttackState::EnemyAttackState(GameDataRef data) {
     explosion->setTexture(*texture);
     explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
     explosion->setScale((12.5*data->lenght)/1920,(12.5*data->width)/1080);
-
     auto texti=new sf::Text;
     text1=texti;
-
     text1->setFont(data->font);
-
-
     text1->setCharacterSize(100);
     text1->setScale(data->lenght/1920,data->width/1080);
     text1->setPosition((200*data->lenght)/1920,(700*data->width)/1080);
-
     text1->setFillColor(sf::Color::Black);
     text1->setOutlineThickness(5);
     text1->setOutlineColor(sf::Color::Red);
 }
-
-
 EnemyAttackState::~EnemyAttackState() {
 delete explosion;
     delete text1;
 }
-
 void EnemyAttackState::Update() {
     time1=sf::milliseconds(62.5);
-    if (data->enemyptr->canAttack() || isExplosion == true) {
-        if (data->enemyptr->isAttackEnded() == false && isExplosion == false)
-            data->enemyptr->attackAnimation();
-        if (data->enemyptr->isAttackEnded() == true) {
-            data->heroptr->takeDamage(damage);
+    if (data->enemyptr->CanAttack() || IsExplosion) {
+        if (!data->enemyptr->isAttackEnded() && !IsExplosion)
+            data->enemyptr->AttackAnimation();
+        if (data->enemyptr->isAttackEnded()) {
+            data->heroptr->TakeDamage(Damage);
             data->enemyptr->setAttackEnded(false);
             data->enemyptr->setStaminaLeft(data->enemyptr->getStaminaLeft() - 2);
-            isExplosion = true;
+            IsExplosion = true;
             data->music2.stop();
             data->music2.play();
         }
-        if (isExplosion) {
+        if (IsExplosion) {
             explosion->setPosition((100 * data->lenght) / 1920, (500 * data->width) / 1080);
-            explosion->setTextureRect(sf::IntRect(32 * countExplosion, 0, 32, 32));
-            countExplosion++;
+            explosion->setTextureRect(sf::IntRect(32 * CountExplosion, 0, 32, 32));
+            CountExplosion++;
             clock1.restart();
             while (clock1.getElapsedTime() < time1) {}
-
             std::stringstream ciao1;
-            ciao1<<"-"<<damage;
+            ciao1<<"-"<<Damage;
             text1->setString(ciao1.str());
-
-            if (countExplosion == 16) {
-
-                isExplosion = false;
-                countExplosion = 0;
+            if (CountExplosion == 16) {
+                IsExplosion = false;
+                CountExplosion = 0;
                 explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
-                damage = 0;
-
-                if (data->heroptr->isDead()){
+                Damage = 0;
+                if (data->heroptr->IsDead()){
                     this->data->machine.setNewState(StateRef(new DedState(data)));
                     this->data->machine.setReplace(true);
                     data->music1.stop();
@@ -80,18 +68,15 @@ void EnemyAttackState::Update() {
                 }
             }
         }
-
     } else {
         data->enemyptr->setStaminaLeft(data->enemyptr->getStaminaLeft() + data->enemyptr->getStamina());
-
         this->data->machine.setNewState(StateRef(new AttackMenuState(data)));
         this->data->machine.setReplace(true);
     }
 }
 void EnemyAttackState::Init() {
-
     data->menu->setTextureRect(sf::IntRect(1920*3,0,1920,1080));
-    damage=data->enemyptr->attack();
+    Damage=data->enemyptr->Attack();
     data->menu->setScale(((1*data->lenght)/1920),((1*data->width)/1080));
 }
 
@@ -100,15 +85,13 @@ void EnemyAttackState::HandleInput() {
     while (this->data->window.pollEvent(event))
         if (sf::Event::Closed == event.type) {
             this->data->window.close();
-
         }
 }
-
 void EnemyAttackState::Draw() {
     data->window.draw(*data->menu);
-    data->heroptr->drawHero(data->window);
-    data->enemyptr->drawMe(data->window);
-    if(isExplosion){
+    data->heroptr->Draw(data->window);
+    data->enemyptr->Draw(data->window);
+    if(IsExplosion){
         data->window.draw(*this->explosion);
         data->window.draw(*text1);
     }

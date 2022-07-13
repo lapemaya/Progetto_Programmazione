@@ -4,25 +4,18 @@
 
 #ifndef GIOCO2_HEROCHECKSTATE_H
 #define GIOCO2_HEROCHECKSTATE_H
+
 #include "State.h"
 #include "Game.h"
-
-
 class HeroCheckState:public State {
 public:
     HeroCheckState(GameDataRef data);
-
-
     virtual ~HeroCheckState();
 
     void Update() override;
-
     void Init() override;
-
     void HandleInput() override;
-
     void Draw() override;
-
 private:
     GameDataRef data;
 };

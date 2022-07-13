@@ -10,22 +10,17 @@
 class DedState:public State {
 public:
     DedState(GameDataRef data);
-
-
     virtual ~DedState();
 
     void Update() override;
     void Init() override;
-
     void HandleInput()override;
-
     void Draw() override;
 private:
     GameDataRef data;
     sf::Text* text1;
     sf::Text* text2;
     sf::Text* text3;
-
 };
 
 

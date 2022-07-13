@@ -10,30 +10,24 @@
 
 class Fireball:public sf::Sprite {
 public:
-
     Fireball(int posx=300,int posy=400);
     virtual ~Fireball();
 
     int getPosx() const {
-        return posx;
+        return Posx;
     }
-
-    void setPosx(int posx) {
-        Fireball::posx = posx;
+    void setPosx(int Posx) {
+        Fireball::Posx = Posx;
     }
-
     int getPosy() const {
-        return posy;
+        return Posy;
     }
-
-    void setPosy(int posy) {
-        Fireball::posy = posy;
+    void setPosy(int Posy) {
+        Fireball::Posy = Posy;
     }
-
 protected:
-    int posx=300;
-    int posy=400;
-
+    int Posx=300;
+    int Posy=400;
 };
 
 #endif //GIOCO2_FIREBALL_H

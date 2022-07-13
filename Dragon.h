@@ -7,17 +7,16 @@
 
 #include "Enemy.h"
 #include "Fireball.h"
-
 class Dragon:public Enemy {
 public:
-    Dragon(int N);
+    Dragon(int level);
     virtual ~Dragon();
 
-    virtual void attackAnimation()override;
-    void drawMe(sf::RenderWindow &finestra) override;
+    virtual void AttackAnimation()override;
+    void Draw(sf::RenderWindow &finestra)override;
 private:
     Fireball* fireptr;
-    bool inAttack=false;
+    bool InAttack=false;
 };
 
 

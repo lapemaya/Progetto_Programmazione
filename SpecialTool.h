@@ -11,21 +11,13 @@
 class SpecialTool:public Tool {
 public:
     SpecialTool(int N);
-
     virtual ~SpecialTool();
+
     SpecialTool(const Tool& tool,int O);
-
     int getSpecial() const {
-        return special;
+        return Special;
     }
-
-
 protected:
-    int special;
-
-
-
+    int Special;
 };
-
-
 #endif //GIOCO2_SPECIALTOOL_H

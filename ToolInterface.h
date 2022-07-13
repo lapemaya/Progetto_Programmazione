@@ -23,10 +23,8 @@ public:
         }
         return Vtool;
     }
-
 private:
     ToolFactory* factory;
-
 };
 
 
