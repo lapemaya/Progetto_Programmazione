@@ -7,7 +7,7 @@
 
 
 #include <SFML/Graphics.hpp>
-//#include "ArrayPing.h"
+
 #include "Tool.h"
 
 #include "SpecialTool.h"

@@ -282,8 +282,569 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug && /snap/clion/198/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/lapo/Desktop/gioco2/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Game_test
+
+
+#############################################
+# Order-only phony target for Game_test
+
+build cmake_object_order_depends_target_Game_test: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build test/CMakeFiles/Game_test.dir/test_main.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/test/test_main.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/test_main.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir
+
+build test/CMakeFiles/Game_test.dir/TestHero.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/test/TestHero.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/TestHero.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir
+
+build test/CMakeFiles/Game_test.dir/__/Druid.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/Druid.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/__/Druid.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir/__
+
+build test/CMakeFiles/Game_test.dir/__/Hero.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/Hero.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/__/Hero.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir/__
+
+build test/CMakeFiles/Game_test.dir/__/Tool.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/Tool.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/__/Tool.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir/__
+
+build test/CMakeFiles/Game_test.dir/__/SpecialTool.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/SpecialTool.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/__/SpecialTool.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir/__
+
+build test/CMakeFiles/Game_test.dir/TestEnemy.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/test/TestEnemy.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/TestEnemy.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir
+
+build test/CMakeFiles/Game_test.dir/__/Rat.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/Rat.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/__/Rat.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir/__
+
+build test/CMakeFiles/Game_test.dir/__/Enemy.cpp.o: CXX_COMPILER__Game_test_Debug /home/lapo/Desktop/gioco2/Enemy.cpp || cmake_object_order_depends_target_Game_test
+  DEP_FILE = test/CMakeFiles/Game_test.dir/__/Enemy.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Game_test.dir/__
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Game_test
+
+
+#############################################
+# Link the executable test/Game_test
+
+build test/Game_test: CXX_EXECUTABLE_LINKER__Game_test_Debug test/CMakeFiles/Game_test.dir/test_main.cpp.o test/CMakeFiles/Game_test.dir/TestHero.cpp.o test/CMakeFiles/Game_test.dir/__/Druid.cpp.o test/CMakeFiles/Game_test.dir/__/Hero.cpp.o test/CMakeFiles/Game_test.dir/__/Tool.cpp.o test/CMakeFiles/Game_test.dir/__/SpecialTool.cpp.o test/CMakeFiles/Game_test.dir/TestEnemy.cpp.o test/CMakeFiles/Game_test.dir/__/Rat.cpp.o test/CMakeFiles/Game_test.dir/__/Enemy.cpp.o | lib/libgtestd.a lib/libgtest_maind.a /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 lib/libgtestd.a /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1 || lib/libgtest_maind.a lib/libgtestd.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtestd.a  lib/libgtest_maind.a  /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  lib/libgtestd.a  -lpthread  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+  OBJECT_DIR = test/CMakeFiles/Game_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/Game_test
+  TARGET_PDB = Game_test.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test && /snap/clion/198/bin/cmake/linux/bin/ccmake -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test && /snap/clion/198/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/CMakeFiles/install.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test && /snap/clion/198/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/install: phony test/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/CMakeFiles/install/local.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/install/local: phony test/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/install/strip: phony test/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/lapo/Desktop/gioco2/test/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib && /snap/clion/198/bin/cmake/linux/bin/ccmake -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build test/lib/edit_cache: phony test/lib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib && /snap/clion/198/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/lib/rebuild_cache: phony test/lib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/lib/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/lib/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib && /snap/clion/198/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/lib/install: phony test/lib/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/lib/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/lib/install/local: phony test/lib/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/lib/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/lib/install/strip: phony test/lib/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/lapo/Desktop/gioco2/test/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build test/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /home/lapo/Desktop/gioco2/test/lib/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = test/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11
+  INCLUDES = -I/home/lapo/Desktop/gioco2/test/lib/googlemock/include -I/home/lapo/Desktop/gioco2/test/lib/googlemock -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/lib/googlemock/CMakeFiles/gmock.dir
+  OBJECT_FILE_DIR = test/lib/googlemock/CMakeFiles/gmock.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib/libgmockd.a
+
+build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug test/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googlemock/CMakeFiles/gmock.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmockd.a
+  TARGET_PDB = gmockd.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build test/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /home/lapo/Desktop/gioco2/test/lib/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = test/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googlemock/include -isystem /home/lapo/Desktop/gioco2/test/lib/googlemock -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/lib/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_FILE_DIR = test/lib/googlemock/CMakeFiles/gmock_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib/libgmock_maind.a
+
+build lib/libgmock_maind.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug test/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmockd.a lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googlemock/CMakeFiles/gmock_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmock_maind.a
+  TARGET_PDB = gmock_maind.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/lib/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googlemock && /snap/clion/198/bin/cmake/linux/bin/ccmake -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build test/lib/googlemock/edit_cache: phony test/lib/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/lib/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googlemock && /snap/clion/198/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/lib/googlemock/rebuild_cache: phony test/lib/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/lib/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/lib/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/googlemock/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googlemock && /snap/clion/198/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/lib/googlemock/install: phony test/lib/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/lib/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/googlemock/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googlemock && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/lib/googlemock/install/local: phony test/lib/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/lib/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/googlemock/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googlemock && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/lib/googlemock/install/strip: phony test/lib/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/lapo/Desktop/gioco2/test/lib/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || test/lib/googletest/CMakeFiles/gtest.dir
+
+build test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /home/lapo/Desktop/gioco2/test/lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11
+  INCLUDES = -I/home/lapo/Desktop/gioco2/test/lib/googletest/include -I/home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = test/lib/googletest/CMakeFiles/gtest.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib/libgtestd.a
+
+build lib/libgtestd.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtestd.a
+  TARGET_PDB = gtestd.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /home/lapo/Desktop/gioco2/test/lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11
+  INCLUDES = -isystem /home/lapo/Desktop/gioco2/test/lib/googletest/include -isystem /home/lapo/Desktop/gioco2/test/lib/googletest
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib/libgtest_maind.a
+
+build lib/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest_maind.a
+  TARGET_PDB = gtest_maind.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/lib/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googletest && /snap/clion/198/bin/cmake/linux/bin/ccmake -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/edit_cache: phony test/lib/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/lib/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googletest && /snap/clion/198/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/lapo/Desktop/gioco2 -B/home/lapo/Desktop/gioco2/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/rebuild_cache: phony test/lib/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/lib/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/lib/googletest/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googletest && /snap/clion/198/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install: phony test/lib/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/lib/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googletest && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install/local: phony test/lib/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/lib/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googletest && /snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install/strip: phony test/lib/googletest/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build Game_test: phony test/Game_test
+
+build gmock: phony lib/libgmockd.a
+
+build gmock_main: phony lib/libgmock_maind.a
+
+build gtest: phony lib/libgtestd.a
+
+build gtest_main: phony lib/libgtest_maind.a
+
+build libgmock_maind.a: phony lib/libgmock_maind.a
+
+build libgmockd.a: phony lib/libgmockd.a
+
+build libgtest_maind.a: phony lib/libgtest_maind.a
+
+build libgtestd.a: phony lib/libgtestd.a
 
 # =============================================================================
 # Folder targets.
@@ -293,7 +854,35 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/lapo/Desktop/gioco2/cmake-build-debug
 
-build all: phony gioco2
+build all: phony gioco2 test/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/lapo/Desktop/gioco2/cmake-build-debug/test
+
+build test/all: phony test/Game_test test/lib/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib
+
+build test/lib/all: phony test/lib/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googlemock
+
+build test/lib/googlemock/all: phony lib/libgmockd.a lib/libgmock_maind.a test/lib/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/lapo/Desktop/gioco2/cmake-build-debug/test/lib/googletest
+
+build test/lib/googletest/all: phony lib/libgtestd.a lib/libgtest_maind.a
 
 # =============================================================================
 # Built-in targets
@@ -302,14 +891,14 @@ build all: phony gioco2
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/CMakeLists.txt ../test/lib/googlemock/CMakeLists.txt ../test/lib/googlemock/cmake/gmock.pc.in ../test/lib/googlemock/cmake/gmock_main.pc.in ../test/lib/googletest/CMakeLists.txt ../test/lib/googletest/cmake/Config.cmake.in ../test/lib/googletest/cmake/gtest.pc.in ../test/lib/googletest/cmake/gtest_main.pc.in ../test/lib/googletest/cmake/internal_utils.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDependentOption.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CheckLibraryExists.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPythonInterp.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindThreads.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/GNUInstallDirs.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/CMakeLists.txt ../test/lib/googlemock/CMakeLists.txt ../test/lib/googlemock/cmake/gmock.pc.in ../test/lib/googlemock/cmake/gmock_main.pc.in ../test/lib/googletest/CMakeLists.txt ../test/lib/googletest/cmake/Config.cmake.in ../test/lib/googletest/cmake/gtest.pc.in ../test/lib/googletest/cmake/gtest_main.pc.in ../test/lib/googletest/cmake/internal_utils.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDependentOption.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/CheckLibraryExists.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPythonInterp.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindThreads.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/GNUInstallDirs.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

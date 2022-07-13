@@ -55,7 +55,7 @@ Druid::Druid() {
     Hp=maxHp;
     stamina=6;
     nping=4;
-    strenght=9993;
+    strenght=3;
     staminaBar=6;
     staminaLeft=staminaBar;
 }
