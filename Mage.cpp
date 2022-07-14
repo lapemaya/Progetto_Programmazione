@@ -4,7 +4,6 @@
 
 #include "Mage.h"
 Mage::Mage() {
-
     auto texture=new sf::Texture;
     texture->loadFromFile("./sprite/character/mago2.png");
     this->setTexture(*texture);
@@ -86,7 +85,7 @@ void Mage::AttackAnimation() {
         aura=1;
         this->setTextureRect(sf::IntRect(0,32*aura,32,32));}
 }
-void Mage::Draw(sf::RenderWindow &finestra) {
+void Mage::Draw(sf::RenderWindow &finestra)const {
     finestra.draw(*this);
     if(this->getFaseAttack()==1){
         finestra.draw(*(this->getFireptr()));

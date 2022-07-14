@@ -12,6 +12,7 @@ public:
     Tool(int N);
     Tool(const Tool& tool);
     virtual ~Tool();
+
     virtual void ChooseRarityFirst();
     virtual  void ChooseRaritySecond();
 

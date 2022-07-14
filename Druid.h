@@ -13,7 +13,7 @@ public:
     virtual ~Druid();
 
     void AttackAnimation() override;
-    void Draw(sf::RenderWindow &finestra)override;
+    void Draw(sf::RenderWindow &finestra)const override;
     void ResetBonus()override;
      int Attack()override;
 private:

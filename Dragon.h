@@ -13,7 +13,7 @@ public:
     virtual ~Dragon();
 
     virtual void AttackAnimation()override;
-    void Draw(sf::RenderWindow &finestra)override;
+    void Draw(sf::RenderWindow &finestra)const override;
 private:
     Fireball* fireptr;
     bool InAttack=false;

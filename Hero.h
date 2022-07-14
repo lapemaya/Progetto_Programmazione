@@ -17,16 +17,16 @@ public:
     Hero();
     virtual ~Hero();
 
-    virtual bool IsDead();
+    virtual bool IsDead()const;
     virtual void TakeDamage(int damage);
-    virtual bool CanAttack();
+    virtual bool CanAttack()const;
     virtual int Attack();
     virtual int AttackLight();
-    virtual int AttackNormal();
-    virtual int AttackStrong();
+    virtual int AttackNormal()const;
+    virtual int AttackStrong()const;
     virtual void Regen();
     virtual void AttackAnimation();
-    virtual void Draw(sf::RenderWindow &finestra);
+    virtual void Draw(sf::RenderWindow &finestra)const;
     virtual void ResetBonus()=0;
     void Upgrade(Tool* tool);
     void ChangeTool(Tool* tool);

@@ -126,7 +126,7 @@ void Druid::AttackAnimation() {
     }
 }
 
-void Druid::Draw(sf::RenderWindow &finestra) {
+void Druid::Draw(sf::RenderWindow &finestra)const {
     if(Transform==0) {
         finestra.draw(*this);
         if (this->FaseAttack == 0) {

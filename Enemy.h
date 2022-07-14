@@ -19,7 +19,7 @@ public:
     virtual void AttackAnimation();
     virtual void TakeDamage(int damage);
     virtual bool CanAttack()const;
-    virtual void Draw(sf::RenderWindow &finestra);
+    virtual void Draw(sf::RenderWindow &finestra)const;
 
     int getHp() const {
         return Hp;
@@ -93,9 +93,5 @@ protected:
     int CountAttack=0;
     bool AttackEnded=false;
     int Level;
-
-
 };
-
-
 #endif //GIOCO2_ENEMY_H

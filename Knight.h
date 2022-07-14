@@ -13,7 +13,7 @@ public:
     virtual ~Knight();
     int Attack()override;
     void AttackAnimation() override;
-    virtual void Draw(sf::RenderWindow &finestra)override;
+    virtual void Draw(sf::RenderWindow &finestra)const override;
     void ResetBonus()override;
 protected:
     bool Crit=false;

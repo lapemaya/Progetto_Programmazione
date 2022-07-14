@@ -11,7 +11,6 @@
 #include "Mage.h"
 #include "Druid.h"
 #include "AttackMenuState.h"
-
 class ClassMenuState:public State {
 public:
     ClassMenuState(GameDataRef data);

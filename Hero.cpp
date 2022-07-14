@@ -12,7 +12,7 @@ Hero::Hero(){
     auto shoes1=new Tool(1);
     this->shoes=shoes1;
 }
-bool Hero::IsDead() {
+bool Hero::IsDead()const {
     if(this->getHp()<=0)
         return true;
     else
@@ -21,7 +21,7 @@ bool Hero::IsDead() {
 void Hero::TakeDamage(int damage) {
     this->setHp(Hp-damage);
 }
-bool Hero::CanAttack() {
+bool Hero::CanAttack()const {
     if(this->getStaminaLeft()>0)
         return true;
     else
@@ -33,12 +33,12 @@ int Hero::AttackLight() {
     this->HasLight=true;
     return damage;
 }
-int Hero::AttackNormal() {
+int Hero::AttackNormal()const {
     int damage;
     damage=(PingHit*Strenght);
     return damage;
 }
-int Hero::AttackStrong() {
+int Hero::AttackStrong()const {
     int damage;
     damage=(PingHit*Strenght)*2;
     if(PingHit!=Nping){
@@ -63,7 +63,7 @@ int Hero::Attack() {
         damage=AttackStrong();
     return damage;
 }
-void Hero::Draw(sf::RenderWindow &finestra) {
+void Hero::Draw(sf::RenderWindow &finestra)const {
     finestra.draw(*this);
 }
 Hero::~Hero() {}

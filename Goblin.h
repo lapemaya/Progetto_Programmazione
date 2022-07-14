@@ -14,7 +14,7 @@ public:
     virtual ~Goblin();
 
     virtual void AttackAnimation()override;
-    virtual void Draw(sf::RenderWindow &finestra) override;
+    virtual void Draw(sf::RenderWindow &finestra)const override;
 protected:
     sf::Sprite* sprite;
 };

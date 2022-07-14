@@ -20,7 +20,7 @@ public:
     void Update() override;
     void Init() override;
     void HandleInput()override;
-    void Draw() override;
+    void  Draw() override;
     void CreationEnemy();
 private:
     GameDataRef data;

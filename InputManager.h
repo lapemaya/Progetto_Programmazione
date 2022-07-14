@@ -11,6 +11,6 @@ class InputManager {
         InputManager() = default;
         ~InputManager() = default;
 
-        bool response(int x,int y,int dx,int dy);
+        bool response(int x,int y,int dx,int dy)const;
 };
 #endif //GIOCO2_INPUTMANAGER_H

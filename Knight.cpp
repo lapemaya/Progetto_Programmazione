@@ -94,7 +94,7 @@ int Knight::Attack() {
     return damage;
 }
 
-void Knight::Draw(sf::RenderWindow &finestra) {
+void Knight::Draw(sf::RenderWindow &finestra)const {
     finestra.draw(*this);
     if(this->Crit && this->FaseAttack == 1)
         finestra.draw(*swordA);

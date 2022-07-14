@@ -87,7 +87,7 @@ void Goblin::AttackAnimation() {
         delete clock1;
     }
 }
-void Goblin::Draw(sf::RenderWindow &finestra) {
+void Goblin::Draw(sf::RenderWindow &finestra)const {
     finestra.draw(*this);
     if(FaseAttack==1||FaseAttack==2){
         finestra.draw(*sprite);

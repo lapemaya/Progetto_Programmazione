@@ -35,6 +35,6 @@ int Enemy::Attack() {
     return damage;
 }
 void Enemy::AttackAnimation() {}
-void Enemy::Draw(sf::RenderWindow &finestra) {
+void Enemy::Draw(sf::RenderWindow &finestra)const {
     finestra.draw(*this);
 }

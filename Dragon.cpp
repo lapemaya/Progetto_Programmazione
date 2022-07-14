@@ -49,7 +49,7 @@ void Dragon::AttackAnimation() {
         delete clock1;
     }
 }
-void Dragon::Draw(sf::RenderWindow &finestra) {
+void Dragon::Draw(sf::RenderWindow &finestra)const {
     finestra.draw(*this);
     if(this->InAttack)
         finestra.draw(*(this->fireptr));

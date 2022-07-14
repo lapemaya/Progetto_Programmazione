@@ -15,7 +15,7 @@
 
         virtual int Attack()override;
         void AttackAnimation()override;
-        void Draw(sf::RenderWindow &finestra) override;
+        void Draw(sf::RenderWindow &finestra)const override;
         void ResetBonus()override;
         Fireball *getFireptr() const {
             return fireptr;
