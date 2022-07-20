@@ -85,5 +85,4 @@ SpecialTool::SpecialTool(const Tool &tool,int O) {
     }
 }
 SpecialTool::~SpecialTool() {
-delete description;
 }
