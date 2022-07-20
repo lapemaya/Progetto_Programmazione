@@ -16,7 +16,9 @@
 #include "ToolInterface.h"
 #include "SFML/Audio.hpp"
 #include "KillsAchivement.h"
-    struct GameData {
+#include "DamageAchivement.h"
+
+struct GameData {
         int level=1;
         int bye=0;
         int PingHit;
@@ -40,6 +42,7 @@
         ToolInterface toolInterface;
         sf::Font font;
         KillsAchivement* killAchivement;
+        DamageAchivement* damageAchivement;
     };
     typedef std::shared_ptr<GameData> GameDataRef;
     class Game {

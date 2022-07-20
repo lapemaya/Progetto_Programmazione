@@ -66,6 +66,7 @@ void HeroAttackState::Update() {
             explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
             CountExplosion = 0;
             data->enemyptr->TakeDamage(Damage);
+            data->heroptr->Notify();
         }
         if (!data->enemyptr->IsDead() && data->heroptr->isAttackEnded() && !IsExplosion) {
             if (data->again) {

@@ -125,5 +125,5 @@ Il goblin ha molta stamina e invece di colpirti ti spezza il cuore
 
 # Altre Feature
 
-Nel gioco esiste un sistema di achivement. Attualmente l' unico achivemnt disponibile si sblocca dopo aver ucciso 5 nemici. un trofeo apparirà in basso a destra.
+Nel gioco esiste un sistema di achivement. Attualmente gli unici achivemnt disponibili si sbloccano dopo aver ucciso 5 nemici e dopo aver fatto un attacco da più di 500 danni. un trofeo apparirà in basso a destra.
 

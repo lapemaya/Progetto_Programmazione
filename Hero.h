@@ -21,8 +21,8 @@ public:
     virtual bool CanAttack()const;
     virtual int Attack();
     virtual int AttackLight();
-    virtual int AttackNormal()const;
-    virtual int AttackStrong()const;
+    virtual int AttackNormal();
+    virtual int AttackStrong();
     virtual void Regen();
     virtual void AttackAnimation();
     virtual void Draw(sf::RenderWindow &finestra)const;
@@ -184,6 +184,14 @@ public:
         Hero::observers = observers;
     }
 
+    int getDamage() const {
+        return damage;
+    }
+
+    void setDamage(int damage) {
+        Hero::damage = damage;
+    }
+
 protected:
     int Attack1;
     int Hp;
@@ -204,6 +212,7 @@ protected:
     bool HasLight=false;
     int Money=0;
     int Kill=0;
+    int damage=0;
 
     Tool* torso;
     Tool* ring;

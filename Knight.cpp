@@ -24,7 +24,7 @@ Knight::Knight() {
     Hp=MaxHp;
     Stamina=4;
     Nping=3;
-    Strenght=4;
+    Strenght=400;
     StaminaBar=6;
     StaminaLeft=StaminaBar;
 }

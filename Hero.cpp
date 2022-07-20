@@ -31,19 +31,24 @@ int Hero::AttackLight() {
     int damage;
     damage=(PingHit*Strenght)/2;
     this->HasLight=true;
+    this->damage=damage;
     return damage;
 }
-int Hero::AttackNormal()const {
+int Hero::AttackNormal() {
     int damage;
     damage=(PingHit*Strenght);
+    this->damage=damage;
     return damage;
+
 }
-int Hero::AttackStrong()const {
+int Hero::AttackStrong() {
     int damage;
     damage=(PingHit*Strenght)*2;
     if(PingHit!=Nping){
         damage=0;
+
     }
+    this->damage=damage;
     return damage;
 }
 void Hero::Regen() {
@@ -144,15 +149,14 @@ void Hero::Subscribe(Observer *o) {
 }
 
 void Hero::Notify() {
-    auto itr = observers.begin();
-    while (itr != observers.end()) {
+   for(int i=0;i<observers.size();i++){
 
-        if (!observers.empty() && !(*itr)->done) {
-            (*itr)->Update();
-            itr++;
+        if (!observers.empty() && !observers.at(i)->done) {
+            observers.at(i)->Update();
+
         } else {
-            (*itr)->Detach();
-            itr = observers.begin();
+            observers.at(i)->Detach();
+             i=0;
         }
     }
 }
