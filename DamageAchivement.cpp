@@ -30,5 +30,7 @@ void DamageAchivement::Detach() {
     subject->Unsubscribe(this);
 }
 
-DamageAchivement::~DamageAchivement()=default;
+DamageAchivement::~DamageAchivement(){
+    delete trophie;
+};
 

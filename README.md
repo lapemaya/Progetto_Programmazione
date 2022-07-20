@@ -2,9 +2,9 @@
 
 ## Spiegazione GIoco
 
-Il gioco è in stile rouge. il giocatore può scegliere tra tre classi: druid, mage e knight
+Il gioco è in stile rouge. Il giocatore può scegliere tra tre classi: druid, mage e knight
 
-Scelta la classe verrà creato un nemico. il giocatore potrà scegliere con quale attacco attacare o se ricaricare la stamina. Quando il giocatore attacca dovrà colpire dei bersagli chiamati **Ping**
+Scelta la classe verrà creato un nemico. Il giocatore potrà scegliere con quale attacco attacare o se ricaricare la stamina. Quando il giocatore attacca dovrà colpire dei bersagli chiamati **Ping**
 
 <picture>
 <img src="images/menu.gif">
@@ -72,13 +72,14 @@ dopo aver fatto un attacco leggero si trasforma e fa più danni
 <img src="images/special druid.gif">
 </picture>
 
+# Attacchi
 
 Esistono 3 tipi di attacchi:  
 -attacco normale  
 -attacco leggero( metà dei danni ma se vengono colpiti tutti i bersagli si può attaccare di nuovo)  
 -attacco pesante(doppio dei danni ma solo se vengono colpiti tutti i bersagli)
 
-Ucciso il nemico si è portati nella fase di loot dove il giocatore potrà scegliee un oggetto da portare con se che aumenta le statistiche. Se il cursore è sopra un oggetto apparirà scritto cosa potenzia.
+Ucciso il nemico si è portati nella fase di loot dove il giocatore potrà scegliere un oggetto da portare con se che aumenta le statistiche. Se il cursore è sopra un oggetto apparirà scritto cosa potenzia.
 
 Successivamente si passa alla fase di Shop dove se il giocatore avrà abbastanza soldi potrà comprare equipaggiamenti.
 

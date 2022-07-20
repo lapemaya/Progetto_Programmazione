@@ -154,9 +154,6 @@ void Hero::Notify() {
         if (!observers.empty() && !observers.at(i)->done) {
             observers.at(i)->Update();
 
-        } else {
-            observers.at(i)->Detach();
-             i=0;
         }
     }
 }

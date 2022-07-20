@@ -4,7 +4,9 @@
 
 #include "KillsAchivement.h"
 
-KillsAchivement::~KillsAchivement()=default;
+KillsAchivement::~KillsAchivement(){
+    delete trophie;
+}
 
 KillsAchivement::KillsAchivement(Hero *hero) {
     subject=hero;
