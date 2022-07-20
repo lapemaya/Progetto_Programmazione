@@ -7,7 +7,7 @@
 #include"iostream"
     Game::Game() {
 
-        data->window.create(sf::VideoMode::getDesktopMode(), "da Game"//,sf::Style::Fullscreen
+        data->window.create(sf::VideoMode::getDesktopMode(), "da Game",sf::Style::Fullscreen
         );
         data->lenght=data->window.getSize().x;
         data->width=data->window.getSize().y;

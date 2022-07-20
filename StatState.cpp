@@ -8,8 +8,8 @@ StatState::StatState(GameDataRef data) {
     this->data=data;
     std::stringstream ciao1;
     ciao1<<"Pick da PowerUp";
-    auto texti=new sf::Text;
-    text1=texti;
+    auto text1=new sf::Text;
+
     text1->setFont(data->font);
     text1->setString(ciao1.str());
     text1->setCharacterSize(100);
@@ -18,13 +18,13 @@ StatState::StatState(GameDataRef data) {
     text1->setFillColor(sf::Color::Black);
     text1->setOutlineThickness(5);
     text1->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text1);
 /////////////////////////////////////////////////
 
     std::stringstream ciao2;
     ciao2<<"Hp Up";
-    auto texti2=new sf::Text;
-    text2=texti2;
+    auto text2=new sf::Text;
+
     text2->setFont(data->font);
     text2->setString(ciao2.str());
     text2->setCharacterSize(30);
@@ -33,12 +33,12 @@ StatState::StatState(GameDataRef data) {
     text2->setFillColor(sf::Color::Black);
     text2->setOutlineThickness(5);
     text2->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text2);
     /////////////////////////////////////////////////
 
     std::string ciao3="Leave";
-    auto texti3=new sf::Text;
-    this->text3=texti3;
+    auto text3=new sf::Text;
+
     text3->setFont(data->font);
     text3->setString(ciao3);
     text3->setCharacterSize(50);
@@ -47,13 +47,13 @@ StatState::StatState(GameDataRef data) {
     text3->setFillColor(sf::Color::Black);
     text3->setOutlineThickness(5);
     text3->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text3);
     /////////////////////////////////////////////////
 
     std::stringstream ciao4;
     ciao4<<"Stamina Up";
-    auto texti4=new sf::Text;
-    this->text4=texti4;
+    auto text4=new sf::Text;
+
     text4->setFont(data->font);
     text4->setString(ciao4.str());
     text4->setCharacterSize(30);
@@ -62,12 +62,12 @@ StatState::StatState(GameDataRef data) {
     text4->setFillColor(sf::Color::Black);
     text4->setOutlineThickness(5);
     text4->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text4);
     /////////////////////////////////////////////////
 
     std::string ciao5="Ping Up";
-    auto texti5=new sf::Text;
-    this->text5=texti5;
+    auto text5=new sf::Text;
+
     text5->setFont(data->font);
     text5->setString(ciao5);
     text5->setCharacterSize(30);
@@ -76,8 +76,11 @@ StatState::StatState(GameDataRef data) {
     text5->setFillColor(sf::Color::Black);
     text5->setOutlineThickness(5);
     text5->setOutlineColor(sf::Color::Red);
+    Vtext.push_back(text5);
 }
-StatState::~StatState() {}
+StatState::~StatState() {
+    Vtext.clear();
+}
 
 void StatState::Update() {}
 
@@ -180,9 +183,7 @@ void StatState::HandleInput() {
 }
 void StatState::Draw() {
     data->window.draw(*data->menu);
-    data->window.draw(*text1);
-    data->window.draw(*text2);
-    data->window.draw(*text3);
-    data->window.draw(*text4);
-    data->window.draw(*text5);
+    for(int i=0;i<Vtext.size();i++) {
+        data->window.draw(*Vtext.at(i));
+    }
 }

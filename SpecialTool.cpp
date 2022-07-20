@@ -7,9 +7,9 @@
 SpecialTool::SpecialTool(int N) {
     Bonus=2;
     Type=3;
-    auto description1=new std::string ;
-    *description1="Strenght UP";
-    description=description1;
+    description=new std::string ;
+    *description="Strenght UP";
+
     if(N==2) {
         auto texture = new sf::Texture;
         texture->loadFromFile("./sprite/Tools/sword.png");
@@ -84,4 +84,6 @@ SpecialTool::SpecialTool(const Tool &tool,int O) {
         Special=O;
     }
 }
-SpecialTool::~SpecialTool() {}
+SpecialTool::~SpecialTool() {
+delete description;
+}

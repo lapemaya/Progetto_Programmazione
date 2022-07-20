@@ -3,12 +3,14 @@
 //
 
 #include "Tool.h"
-Tool::~Tool() {}
+Tool::~Tool() {
+    delete description;
+}
 Tool::Tool(int N) {
+    auto texture=new sf::Texture;
+    this->setTexture(*texture);
     if(N==0){
-        auto texture=new sf::Texture;
         texture->loadFromFile("./sprite/Tools/torso.png");
-        this->setTexture(*texture);
         this->setTextureRect(sf::IntRect(0, 0, 32, 32));
         this->setPosx(1000);
         this->setPosy(300);
@@ -17,14 +19,12 @@ Tool::Tool(int N) {
         Bonus=15;
         this->Type=0;
         this->Rarity=0;
-        auto description1=new std::string ;
-        *description1="Hp UP";
-        description=description1;
+        description=new std::string ;
+        *description="Hp UP";
+
     }
     if(N==1){
-        auto texture=new sf::Texture;
         texture->loadFromFile("./sprite/Tools/scarpa.png");
-        this->setTexture(*texture);
         this->setTextureRect(sf::IntRect(0, 0, 32, 32));
         this->setPosx(1300);
         this->setPosy(300);
@@ -33,14 +33,12 @@ Tool::Tool(int N) {
         this->Type=1;
         this->Rarity=0;
         Bonus=1;
-        auto description1=new std::string ;
-        *description1="Stamina UP";
-        description=description1;
+        description=new std::string ;
+        *description="Stamina UP";
+
     }
     if(N==2){
-        auto texture=new sf::Texture;
         texture->loadFromFile("./sprite/Tools/anello.png");
-        this->setTexture(*texture);
         this->setTextureRect(sf::IntRect(0, 0, 32, 32));
         this->setPosx(1000);
         this->setPosy(600);
@@ -49,9 +47,9 @@ Tool::Tool(int N) {
         this->setBonus(1);
         this->Type=2;
         this->Rarity=0;
-        auto description1=new std::string ;
-        *description1="Ping UP";
-        description=description1;
+        description=new std::string ;
+        *description="Ping UP";
+
     }
 }
 
@@ -120,5 +118,7 @@ void Tool::ChooseRaritySecond() {
         this->Rarity=1;
         this->Cost=5;}
 }
-Tool::Tool() {}
+Tool::Tool() {
+
+}
 

@@ -113,6 +113,7 @@ void AttackMenuState::Init() {
 }
 AttackMenuState::~AttackMenuState() {
     Vtext.clear();
+    delete X;
 }
 void AttackMenuState::Update() {}
 void AttackMenuState::HandleInput() {

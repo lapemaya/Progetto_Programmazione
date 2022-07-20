@@ -19,3 +19,7 @@ Ping::Ping(){
 void Ping::Draw(sf::RenderWindow &finestra) {
     finestra.draw(*this);
 }
+
+Ping::~Ping() {
+
+}

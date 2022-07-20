@@ -5,12 +5,12 @@
 #include "Hero.h"
 
 Hero::Hero(){
-    auto torso1=new Tool(0);
-    this->torso=torso1;
-    auto ring1=new Tool(2);
-    this->ring=ring1;
-    auto shoes1=new Tool(1);
-    this->shoes=shoes1;
+    torso=new Tool(0);
+
+    ring=new Tool(2);
+
+    shoes=new Tool(1);
+
 }
 bool Hero::IsDead()const {
     if(this->getHp()<=0)
@@ -66,7 +66,12 @@ int Hero::Attack() {
 void Hero::Draw(sf::RenderWindow &finestra)const {
     finestra.draw(*this);
 }
-Hero::~Hero() {}
+Hero::~Hero() {
+    delete torso;
+    delete ring;
+    delete shoes;
+    delete specialTool;
+}
 void Hero::Upgrade(Tool* tool) {
     int controll=tool->getType();
     if(controll==2){
@@ -93,7 +98,7 @@ void Hero::ChangeTool(Tool* tool) {
         tool->setPosy(300);
         tool->setPosition(tool->getPosx(),tool->getPosy());
         this->Upgrade(tool);
-        delete this->torso;
+        delete torso;
         this->torso=new Tool(*tool);
     }
     if (tool->getType() == 1) {

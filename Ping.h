@@ -12,6 +12,8 @@ public:
     Ping(int posx,int posy);
     Ping();
 
+    virtual ~Ping();
+
     void Draw(sf::RenderWindow &finestra);
     int getPosx() const {
         return Posx;
