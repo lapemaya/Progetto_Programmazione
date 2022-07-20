@@ -23,7 +23,7 @@ Knight ha molto attacco e poca stamina
 </picture>
 
 
-Attacco speciale:
+**Attacco speciale**:
 
 ha una possibilità di fare un colpo critico
 
@@ -43,7 +43,7 @@ Mage ha poco attacco ma molti ping
 </picture>
 
 
-Attacco speciale:
+**Attacco speciale**:
 
 dopo aver colpito 8 ping si potenzia e fa più danni
 
@@ -63,7 +63,7 @@ Druid ha molta stamina ma poca vita
 </picture>
 
 
-Attacco speciale:
+**Attacco speciale**:
 
 dopo aver fatto un attacco leggero si trasforma e fa più danni
 
