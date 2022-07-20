@@ -14,8 +14,8 @@ EnemyAttackState::EnemyAttackState(GameDataRef data) {
     explosion->setTexture(*texture);
     explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
     explosion->setScale((12.5*data->lenght)/1920,(12.5*data->width)/1080);
-    auto texti=new sf::Text;
-    text1=texti;
+    auto text1=new sf::Text;
+
     text1->setFont(data->font);
     text1->setCharacterSize(100);
     text1->setScale(data->lenght/1920,data->width/1080);
@@ -23,10 +23,11 @@ EnemyAttackState::EnemyAttackState(GameDataRef data) {
     text1->setFillColor(sf::Color::Black);
     text1->setOutlineThickness(5);
     text1->setOutlineColor(sf::Color::Red);
+    Vtext.push_back(text1);
 }
 EnemyAttackState::~EnemyAttackState() {
 delete explosion;
-    delete text1;
+    Vtext.clear();
 }
 void EnemyAttackState::Update() {
     time1=sf::milliseconds(62.5);
@@ -49,7 +50,7 @@ void EnemyAttackState::Update() {
             while (clock1.getElapsedTime() < time1) {}
             std::stringstream ciao1;
             ciao1<<"-"<<Damage;
-            text1->setString(ciao1.str());
+            Vtext.at(0)->setString(ciao1.str());
             if (CountExplosion == 16) {
                 IsExplosion = false;
                 CountExplosion = 0;
@@ -93,6 +94,8 @@ void EnemyAttackState::Draw() {
     data->enemyptr->Draw(data->window);
     if(IsExplosion){
         data->window.draw(*this->explosion);
-        data->window.draw(*text1);
+        for(int i=0;i<Vtext.size();i++) {
+            data->window.draw(*Vtext.at(i));
+        }
     }
 }

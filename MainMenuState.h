@@ -19,9 +19,7 @@ public:
      void Draw() override;
 private:
     GameDataRef data;
-    sf::Text* text1;
-    sf::Text* text2;
-    sf::Text* text3;
-    sf::Text* text4;
+
+    std::vector<sf::Text*>Vtext;
 };
 #endif //GIOCO2_MAINMENUSTATE_H

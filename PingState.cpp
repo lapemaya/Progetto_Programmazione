@@ -8,8 +8,8 @@ PingState::PingState(GameDataRef data) {
     this->data=data;
     std::stringstream ciao1;
     ciao1<<"Hp= "<<data->heroptr->getHp()<<"\nStamina= "<<data->heroptr->getStaminaLeft()<<"\nMoney= "<<data->heroptr->getMoney();
-    auto texti1=new sf::Text;
-    text1=texti1;
+    auto text1=new sf::Text;
+
     text1->setFont(data->font);
     text1->setString(ciao1.str());
     text1->setCharacterSize(50);
@@ -18,13 +18,13 @@ PingState::PingState(GameDataRef data) {
     text1->setFillColor(sf::Color::Black);
     text1->setOutlineThickness(5);
     text1->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text1);
 /////////////////////////////////////////////////
 
     std::stringstream ciao2;
     ciao2<<"Hp= "<<data->enemyptr->getHp()<<"\nStamina= "<<data->enemyptr->getStaminaLeft();
-    auto texti2=new sf::Text;
-    text2=texti2;
+    auto text2=new sf::Text;
+
     text2->setFont(data->font);
     text2->setString(ciao2.str());
     text2->setCharacterSize(50);
@@ -33,13 +33,13 @@ PingState::PingState(GameDataRef data) {
     text2->setFillColor(sf::Color::Black);
     text2->setOutlineThickness(5);
     text2->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text2);
     /////////////////////////////////////////////////
 
     std::stringstream ciao3;
     ciao3<<(time1.asSeconds()-clock1.getElapsedTime().asSeconds());
-    auto texti3=new sf::Text;
-    text3=texti3;
+    auto text3=new sf::Text;
+
     text3->setFont(data->font);
     text3->setString(ciao3.str());
     text3->setCharacterSize(50);
@@ -48,17 +48,17 @@ PingState::PingState(GameDataRef data) {
     text3->setFillColor(sf::Color::Black);
     text3->setOutlineThickness(5);
     text3->setOutlineColor(sf::Color::Red);
+    Vtext.push_back(text3);
 }
 PingState::~PingState() {
-delete text1;
-delete text2;
+    Vtext.clear();
 }
 void PingState::Update() {
     std::stringstream ciao3;
     float value = (int)((time1.asSeconds()-clock1.getElapsedTime().asSeconds()) * 10);
     value=(float)value / 10;
     ciao3<<(value);
-    text3->setString(ciao3.str());
+    Vtext.at(2)->setString(ciao3.str());
     if(data->V.size()==0){
         End=true;
     }
@@ -99,9 +99,9 @@ void PingState::Draw() {
     this->DrawPings(data->V);
     data->heroptr->Draw(data->window);
     data->enemyptr->Draw(data->window);
-    data->window.draw(*text1);
-    data->window.draw(*text2);
-    data->window.draw(*text3);
+    for(int i=0;i<Vtext.size();i++) {
+        data->window.draw(*Vtext.at(i));
+    }
 }
 
 void PingState::CreationPing(int N, std::vector<Ping *> &V) {

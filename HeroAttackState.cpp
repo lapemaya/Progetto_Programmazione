@@ -13,8 +13,8 @@ HeroAttackState::HeroAttackState(GameDataRef data) {
     explosion->setTexture(*texture);
     explosion->setTextureRect(sf::IntRect(0, 0, 32, 32));
     explosion->setScale((12.5*data->lenght)/1920,(12.5*data->width)/1080);
-    auto texti=new sf::Text;
-    text1=texti;
+    auto text1=new sf::Text;
+
     text1->setFont(data->font);
     text1->setCharacterSize(100);
     text1->setScale(data->lenght/1920,data->width/1080);
@@ -22,10 +22,11 @@ HeroAttackState::HeroAttackState(GameDataRef data) {
     text1->setFillColor(sf::Color::Black);
     text1->setOutlineThickness(5);
     text1->setOutlineColor(sf::Color::Red);
+    Vtext.push_back(text1);
 }
 HeroAttackState::~HeroAttackState() {
 delete explosion;
-delete text1;
+Vtext.clear();
 }
 void HeroAttackState::Update() {
     time1=sf::milliseconds(62.5);
@@ -57,7 +58,7 @@ void HeroAttackState::Update() {
         clock1.restart();
         std::stringstream ciao1;
         ciao1<<"-"<<Damage;
-        text1->setString(ciao1.str());
+        Vtext.at(0)->setString(ciao1.str());
         while (clock1.getElapsedTime() < time1) {}
         if (CountExplosion == 16) {
             data->heroptr->setAttackEnded(true);
@@ -109,6 +110,8 @@ void HeroAttackState::Draw() {
     data->heroptr->Draw(data->window);
     if(IsExplosion){
         data->window.draw(*this->explosion);
-        data->window.draw(*text1);
+        for(int i=0;i<Vtext.size();i++) {
+            data->window.draw(*Vtext.at(i));
+        }
     }
 }

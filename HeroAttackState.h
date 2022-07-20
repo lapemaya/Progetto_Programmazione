@@ -26,7 +26,7 @@ private:
     int CountExplosion=0;
     sf::Time time1;
     sf::Clock clock1;
-    sf::Text* text1;
+    std::vector<sf::Text*>Vtext;
 };
 
 

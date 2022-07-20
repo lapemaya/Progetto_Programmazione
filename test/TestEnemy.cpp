@@ -6,12 +6,12 @@
 
 TEST(Enemy, takeDamage){
     auto rat=new Rat(1);
-    rat->takeDamage(5);
+    rat->TakeDamage(5);
     EXPECT_EQ(rat->getHp(),25);
 }
 
 TEST(Enemy, Dead){
     auto rat=new Rat(1);
-    rat->takeDamage(rat->getHp());
-    EXPECT_EQ(rat->isDead(),true);
+    rat->TakeDamage(rat->getHp());
+    EXPECT_EQ(rat->IsDead(),true);
 }

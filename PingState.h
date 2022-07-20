@@ -25,9 +25,8 @@ private:
     GameDataRef data;
     sf::Time time1;
     sf::Clock clock1;
-    sf::Text* text1;
-    sf::Text* text2;
-    sf::Text* text3;
+
+    std::vector<sf::Text*>Vtext;
     bool End=false;
     bool Hit=false;
     int Quale=0;

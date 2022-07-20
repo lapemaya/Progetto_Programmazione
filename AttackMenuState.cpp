@@ -34,7 +34,7 @@ void AttackMenuState::Init() {
     }
     std::stringstream ciao1;
     ciao1<<"Hp= "<<data->heroptr->getHp()<<"\nStamina= "<<data->heroptr->getStaminaLeft()<<"\nMoney= "<<data->heroptr->getMoney();
-    text1=new sf::Text;
+    auto text1=new sf::Text;
     text1->setFont(data->font);
     text1->setString(ciao1.str());
     text1->setCharacterSize(50);
@@ -43,12 +43,12 @@ void AttackMenuState::Init() {
     text1->setFillColor(sf::Color::Black);
     text1->setOutlineThickness(5);
     text1->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text1);
 /////////////////////////////////////////////////
 
     std::stringstream ciao2;
     ciao2<<"HP= "<<data->enemyptr->getHp()<<"\nStamina= "<<data->enemyptr->getStaminaLeft();
-    text2=new sf::Text;
+    auto text2=new sf::Text;
     text2->setFont(data->font);
     text2->setString(ciao2.str());
     text2->setCharacterSize(50);
@@ -57,11 +57,11 @@ void AttackMenuState::Init() {
     text2->setFillColor(sf::Color::Black);
     text2->setOutlineThickness(5);
     text2->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text2);
     /////////////////////////////////////////////////
 
     std::string ciao3="Normal\nAttack";
-    text3=new sf::Text;
+    auto text3=new sf::Text;
     text3->setFont(data->font);
     text3->setString(ciao3);
     text3->setCharacterSize(30);
@@ -70,11 +70,11 @@ void AttackMenuState::Init() {
     text3->setFillColor(sf::Color::Black);
     text3->setOutlineThickness(5);
     text3->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text3);
     /////////////////////////////////////////////////
 
     std::string ciao4="Strong\nAttack";
-    text4=new sf::Text;
+    auto text4=new sf::Text;
     text4->setFont(data->font);
     text4->setString(ciao4);
     text4->setCharacterSize(30);
@@ -83,11 +83,11 @@ void AttackMenuState::Init() {
     text4->setFillColor(sf::Color::Black);
     text4->setOutlineThickness(5);
     text4->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text4);
     /////////////////////////////////////////////////
 
     std::string ciao5="  Light\nAttack";
-    text5=new sf::Text;
+    auto text5=new sf::Text;
     text5->setFont(data->font);
     text5->setString(ciao5);
     text5->setCharacterSize(30);
@@ -96,11 +96,11 @@ void AttackMenuState::Init() {
     text5->setFillColor(sf::Color::Black);
     text5->setOutlineThickness(5);
     text5->setOutlineColor(sf::Color::Red);
-
+    Vtext.push_back(text5);
     /////////////////////////////////////////////////
 
     std::string ciao6="Regen";
-    text6=new sf::Text;
+    auto text6=new sf::Text;
     text6->setFont(data->font);
     text6->setString(ciao6);
     text6->setCharacterSize(30);
@@ -109,14 +109,10 @@ void AttackMenuState::Init() {
     text6->setFillColor(sf::Color::Black);
     text6->setOutlineThickness(5);
     text6->setOutlineColor(sf::Color::Red);
+    Vtext.push_back(text6);
 }
 AttackMenuState::~AttackMenuState() {
-    delete text1;
-    delete text2;
-    delete text3;
-    delete text4;
-    delete text5;
-    delete text6;
+    Vtext.clear();
 }
 void AttackMenuState::Update() {}
 void AttackMenuState::HandleInput() {
@@ -180,12 +176,9 @@ void AttackMenuState::Draw() {
     data->window.draw(*data->menu);
     data->window.draw(*data->heroptr);
     data->window.draw(*data->enemyptr);
-    data->window.draw(*text1);
-    data->window.draw(*text2);
-    data->window.draw(*text3);
-    data->window.draw(*text4);
-    data->window.draw(*text5);
-    data->window.draw(*text6);
+    for(int i=0;i<Vtext.size();i++) {
+       data->window.draw(*Vtext.at(i));
+    }
     if(data->heroptr->isHasLight()){
         data->window.draw(*X);
     }
