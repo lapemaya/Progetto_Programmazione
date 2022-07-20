@@ -110,6 +110,8 @@ void AttackMenuState::Init() {
     text6->setOutlineThickness(5);
     text6->setOutlineColor(sf::Color::Red);
     Vtext.push_back(text6);
+
+
 }
 AttackMenuState::~AttackMenuState() {
     Vtext.clear();
@@ -191,6 +193,10 @@ void AttackMenuState::Draw() {
         X->setPosition((1000*data->lenght) / 1920,(200*data->width) / 1080);
         data->window.draw(*X);
         X->setPosition((800*data->lenght) / 1920,(400*data->width) / 1080);
+    }
+    for(int i=0;i<data->heroptr->getObservers().size();i++){
+        if(data->heroptr->getObservers().at(i)->done)
+            data->window.draw(*data->heroptr->getObservers().at(i)->GetTrophie());
     }
 }
 void AttackMenuState::CreationEnemy() {

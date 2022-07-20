@@ -15,6 +15,7 @@
 #include "Ping.h"
 #include "ToolInterface.h"
 #include "SFML/Audio.hpp"
+#include "KillsAchivement.h"
     struct GameData {
         int level=1;
         int bye=0;
@@ -38,6 +39,7 @@
         std::vector<Tool*> Vtool;
         ToolInterface toolInterface;
         sf::Font font;
+        KillsAchivement* killAchivement;
     };
     typedef std::shared_ptr<GameData> GameDataRef;
     class Game {

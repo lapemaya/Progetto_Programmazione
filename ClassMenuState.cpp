@@ -84,6 +84,7 @@ void ClassMenuState::HandleInput() {
                 this->data->machine.setReplace(true);
                 data->music3.stop();
                 data->music3.play();
+                data->killAchivement=new KillsAchivement(data->heroptr);
             }
             if (data->input.response((730 * data->lenght) / 1920, (300 * data->width) / 1080,
                                      (500 * data->lenght) / 1920, (600 * data->width) / 1080)) {
@@ -92,6 +93,7 @@ void ClassMenuState::HandleInput() {
                 this->data->machine.setReplace(true);
                 data->music3.stop();
                 data->music3.play();
+                data->killAchivement=new KillsAchivement(data->heroptr);
             }
             if (data->input.response((1350 * data->lenght) / 1920, (300 * data->width) / 1080,
                                      (500 * data->lenght) / 1920, (600 * data->width) / 1080)) {
@@ -100,6 +102,7 @@ void ClassMenuState::HandleInput() {
                 this->data->machine.setReplace(true);
                 data->music3.stop();
                 data->music3.play();
+                data->killAchivement=new KillsAchivement(data->heroptr);
             }
             }
         }

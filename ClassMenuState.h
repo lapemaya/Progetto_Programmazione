@@ -21,8 +21,8 @@ public:
     void HandleInput()override;
     void Draw() override;
 private:
-    GameDataRef data;
 
+    GameDataRef data;
     std::vector<sf::Text*>Vtext;
 };
 

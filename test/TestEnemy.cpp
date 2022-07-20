@@ -12,6 +12,8 @@ TEST(Enemy, takeDamage){
 
 TEST(Enemy, Dead){
     auto rat=new Rat(1);
-    rat->TakeDamage(rat->getHp());
+    rat->TakeDamage(15);
+    rat->TakeDamage(10);
+    rat->TakeDamage(5);
     EXPECT_EQ(rat->IsDead(),true);
 }

@@ -4,7 +4,7 @@
 
 #include "Tool.h"
 Tool::~Tool() {
-    delete description;
+
 }
 Tool::Tool(int N) {
     auto texture=new sf::Texture;

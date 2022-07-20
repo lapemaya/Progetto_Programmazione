@@ -90,6 +90,8 @@ void HeroAttackState::Update() {
         this->data->machine.setReplace(true);
         data->heroptr->setMoney(data->heroptr->getMoney() + data->level * 5 + rand() % 6);
         data->first=true;
+        data->heroptr->setKill(data->heroptr->getKill()+1);
+        data->heroptr->Notify();
     }
 }
 
@@ -113,5 +115,9 @@ void HeroAttackState::Draw() {
         for(int i=0;i<Vtext.size();i++) {
             data->window.draw(*Vtext.at(i));
         }
+    }
+    for(int i=0;i<data->heroptr->getObservers().size();i++){
+        if(data->heroptr->getObservers().at(i)->done)
+            data->window.draw(*data->heroptr->getObservers().at(i)->GetTrophie());
     }
 }

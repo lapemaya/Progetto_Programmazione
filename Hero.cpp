@@ -138,3 +138,25 @@ void Hero::UpgradeStat(int quale) {
         Nping++;
     }
 }
+
+void Hero::Subscribe(Observer *o) {
+    observers.push_back(o);
+}
+
+void Hero::Notify() {
+    auto itr = observers.begin();
+    while (itr != observers.end()) {
+
+        if (!observers.empty() && !(*itr)->done) {
+            (*itr)->Update();
+            itr++;
+        } else {
+            (*itr)->Detach();
+            itr = observers.begin();
+        }
+    }
+}
+
+void Hero::Unsubscribe(Observer *o) {
+    observers.erase(observers.begin()+0);
+}

@@ -7,12 +7,11 @@
 
 
 #include <SFML/Graphics.hpp>
-
 #include "Tool.h"
-
 #include "SpecialTool.h"
+#include "Subject.h"
 
-class Hero:public sf::Sprite {
+class Hero:public sf::Sprite, public Subject{
 public:
     Hero();
     virtual ~Hero();
@@ -31,6 +30,10 @@ public:
     void Upgrade(Tool* tool);
     void ChangeTool(Tool* tool);
     void UpgradeStat(int quale);
+
+    void Subscribe(Observer *o) override;
+    void Notify() override;
+    void Unsubscribe(Observer *o) override;
 
     int getStaminaLeft() const {
         return StaminaLeft;
@@ -164,6 +167,23 @@ public:
     void setMoney(int Money) {
         Hero::Money = Money;
     }
+
+    int getKill() const {
+        return Kill;
+    }
+
+    void setKill(int kill) {
+        Kill = kill;
+    }
+
+    const std::vector<Observer *> &getObservers() const {
+        return observers;
+    }
+
+    void setObservers(const std::vector<Observer *> &observers) {
+        Hero::observers = observers;
+    }
+
 protected:
     int Attack1;
     int Hp;
@@ -183,11 +203,13 @@ protected:
     bool AttackEnded=false;
     bool HasLight=false;
     int Money=0;
+    int Kill=0;
 
     Tool* torso;
     Tool* ring;
     Tool* shoes;
     SpecialTool* specialTool;
+    std::vector<Observer*> observers;
 };
 
 
