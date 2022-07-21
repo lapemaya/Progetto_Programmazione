@@ -7,8 +7,8 @@
 
 EnemyAttackState::EnemyAttackState(GameDataRef data) {
     this->data=data;
-    auto explosion1=new sf::Sprite;
-    explosion=explosion1;
+     explosion=new sf::Sprite;
+
     auto texture=new sf::Texture;
     texture->loadFromFile("./sprite/Varie/explosion.png");
     explosion->setTexture(*texture);

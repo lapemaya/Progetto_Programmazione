@@ -30,9 +30,5 @@ void KillsAchivement::Attach() {
     subject->Subscribe(this);
 }
 
-void KillsAchivement::Detach() {
-    subject->Unsubscribe(this);
-}
-
 
 

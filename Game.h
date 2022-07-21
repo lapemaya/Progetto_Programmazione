@@ -41,8 +41,8 @@ struct GameData {
         std::vector<Tool*> Vtool;
         ToolInterface toolInterface;
         sf::Font font;
-        KillsAchivement* killAchivement;
-        DamageAchivement* damageAchivement;
+        std::vector<Observer*> Va;
+
     };
     typedef std::shared_ptr<GameData> GameDataRef;
     class Game {

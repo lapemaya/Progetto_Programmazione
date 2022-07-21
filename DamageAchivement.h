@@ -11,10 +11,8 @@ class DamageAchivement: public Observer{
 public:
      DamageAchivement(Hero* hero);
     virtual ~DamageAchivement();
-
     void Attach()override;
     void Update()override;
-    void Detach()override;
     sf::Sprite* GetTrophie(){
         return trophie;
     }

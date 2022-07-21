@@ -69,8 +69,7 @@ void DedState::HandleInput() {
                                      (500 * data->lenght) / 1920, (300 * data->width) / 1080)) {
                 delete data->heroptr;
                 delete data->enemyptr;
-                delete data->killAchivement;
-                delete data->damageAchivement;
+                data->Va.clear();
                 data->level = 1;
                 this->data->machine.setNewState(StateRef(new ClassMenuState(data)));
                 this->data->machine.setReplace(true);

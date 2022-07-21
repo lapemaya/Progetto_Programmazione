@@ -26,9 +26,6 @@ void DamageAchivement::Update() {
         }
 }
 
-void DamageAchivement::Detach() {
-    subject->Unsubscribe(this);
-}
 
 DamageAchivement::~DamageAchivement(){
     delete trophie;

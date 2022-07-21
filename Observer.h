@@ -11,7 +11,6 @@ public:
 
     virtual void Update() = 0;
     virtual void Attach() = 0;
-    virtual void Detach() = 0;
     virtual sf::Sprite* GetTrophie()=0;
 
     bool done = false;

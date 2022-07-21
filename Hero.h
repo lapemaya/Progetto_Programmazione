@@ -11,6 +11,8 @@
 #include "SpecialTool.h"
 #include "Subject.h"
 
+
+
 class Hero:public sf::Sprite, public Subject{
 public:
     Hero();

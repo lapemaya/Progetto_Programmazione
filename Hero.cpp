@@ -76,6 +76,7 @@ Hero::~Hero() {
     delete ring;
     delete shoes;
     delete specialTool;
+    observers.clear();
 }
 void Hero::Upgrade(Tool* tool) {
     int controll=tool->getType();

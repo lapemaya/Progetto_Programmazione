@@ -11,10 +11,9 @@ class KillsAchivement: public Observer{
 public:
     KillsAchivement(Hero* hero);
     virtual ~KillsAchivement();
-
     void Attach()override;
     void Update()override;
-    void Detach()override;
+
     sf::Sprite* GetTrophie(){
         return trophie;
     }

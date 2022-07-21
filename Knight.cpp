@@ -5,18 +5,17 @@
 Knight::Knight() {
     auto texture=new sf::Texture;
     texture->loadFromFile("./sprite/character/knight.png");
-    this->setTexture(*texture);
+    this->setTexture(*new sf::Texture);
     this->setTextureRect(sf::IntRect(0, 0, 32, 32));
     this->setPosition(Posx,Posy);
     this->setScale(12.5,12.5);
-    auto swordA1=new sf::Sprite;
+     swordA=new sf::Sprite;
     auto texture1=new sf::Texture;
     texture1->loadFromFile("./sprite/Varie/swordKnight.png");
-    swordA1->setTexture(*texture1);
-    swordA1->setTextureRect(sf::IntRect(0, 0, 32, 32));
-    swordA1->setPosition(1300,300);
-    swordA1->setScale(15,15);
-    swordA=swordA1;
+    swordA->setTexture(*texture1);
+    swordA->setTextureRect(sf::IntRect(0, 0, 32, 32));
+    swordA->setPosition(1300,300);
+    swordA->setScale(15,15);
     auto sword1=new SpecialTool(2);
     this->specialTool=sword1;
 
@@ -24,7 +23,7 @@ Knight::Knight() {
     Hp=MaxHp;
     Stamina=4;
     Nping=3;
-    Strenght=4;
+    Strenght=400;
     StaminaBar=6;
     StaminaLeft=StaminaBar;
 }
