@@ -5,7 +5,7 @@
 Knight::Knight() {
     auto texture=new sf::Texture;
     texture->loadFromFile("./sprite/character/knight.png");
-    this->setTexture(*new sf::Texture);
+    this->setTexture(*texture);
     this->setTextureRect(sf::IntRect(0, 0, 32, 32));
     this->setPosition(Posx,Posy);
     this->setScale(12.5,12.5);
