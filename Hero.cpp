@@ -159,6 +159,3 @@ void Hero::Notify() {
     }
 }
 
-void Hero::Unsubscribe(Observer *o) {
-    observers.erase(observers.begin()+0);
-}

@@ -9,7 +9,6 @@
 class Subject {
 public:
     virtual void Subscribe(Observer *o) = 0;
-    virtual void Unsubscribe(Observer *o) = 0;
     virtual void Notify() = 0;
 
     virtual ~Subject() = default;

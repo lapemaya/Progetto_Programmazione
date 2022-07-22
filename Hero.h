@@ -35,7 +35,6 @@ public:
 
     void Subscribe(Observer *o) override;
     void Notify() override;
-    void Unsubscribe(Observer *o) override;
 
     int getStaminaLeft() const {
         return StaminaLeft;
